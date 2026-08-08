@@ -1,0 +1,162 @@
+# C03 多功能激光测距望远镜 — 冻结事实卡
+# 数据来源: C03_说明书_AI友好版.md（设备官方使用手册）
+# 事实优先级: 冻结产品手册 > 知识库文件 > 原始参考材料
+# 审计规则: 图中任何参数文案必须与此文件一致，不一致则审计失败
+
+product:
+  sku: "C03"
+  name_cn: "C03 多功能激光测距望远镜"
+  name_en: "C03 Multifunctional Laser Rangefinder Binoculars"
+  brand: "GUANGYAN (光衍)"
+  manufacturer: "深圳光衍通讯"
+  models:
+    - code: "C03-15"
+      range_m: 1500
+    - code: "C03-20"
+      range_m: 2000
+
+# 测距系统
+ranging:
+  laser_class: "Class 1 (人眼安全级)"
+  laser_wavelength_nm: 905
+  tx_aperture_mm: 18
+  rx_aperture_mm: 23.5
+  units: ["M (米)", "Y (码)"]
+  angle_range: "±1°"
+  models:
+    C03-15:
+      max_range_m: 1500
+      accuracy:
+        - range: "0.1 ~ 200 m"
+          precision: "±0.5 m"
+        - range: "200 ~ 1500 m"
+          precision: "±0.1%"
+    C03-20:
+      max_range_m: 2000
+      accuracy:
+        - range: "0.1 ~ 300 m"
+          precision: "±0.25 m"
+        - range: "300 ~ 1000 m"
+          precision: "±0.5 m"
+        - range: "1000 ~ 2000 m"
+          precision: "±1 m"
+
+# 光学望远系统
+optics:
+  magnification_optical: "7X ± 5%"
+  magnification_digital: "1X ~ 6X"
+  aperture_mm: 23.5
+  fov_deg: "6.0 ± 5%"
+  focus: "全自动对焦 (Auto-focus)"
+  focus_time_s: "≤0.3"
+  focus_range: "5 m ~ ∞"
+  eye_relief_mm: 15
+  exit_pupil_mm: "3.36 ± 5%"
+  distortion: "<5%"
+  diopter_adjustment: "±5D"
+
+# 长焦摄像系统
+telephoto_camera:
+  sensor: '1/3" 720P'
+  focal_length_mm: 41
+  aperture: "F1.6"
+  distortion: "≤1%"
+  fov_deg: 6.2
+  focus_range: "5 m ~ ∞"
+
+# 广角摄像系统
+wide_camera:
+  sensor: '1/3" 720P'
+  focal_length_mm: 7.6
+  aperture: "F2.8"
+  distortion: "≤1%"
+  fov_deg: 32
+
+# 显示系统
+display:
+  side_screen: '2.4寸 IPS LCD'
+  side_resolution: "320 × 240"
+  eyepiece_transmittance: "95%"
+
+# 电源
+power:
+  battery_mah: 1250
+  battery_type: "循环充电锂电池"
+  runtime_h: "≥2.5"
+  charge_input: "5V 1A"
+  charge_time_h: "~2"
+  auto_off: ["1 min", "3 min", "5 min"]
+
+# 物理规格
+physical:
+  dimensions_mm: "110 × 78 × 44"
+  weight_g: 246
+  package_dimensions_mm: "131.5 × 176.5 × 73"
+  package_weight_g: 580
+
+# 测量模式
+modes:
+  - code: "DST"
+    name_cn: "直线距离测量"
+    name_en: "Straight-line Distance"
+  - code: "FLAG"
+    name_cn: "旗杆锁定测量"
+    name_en: "Flagpole Lock"
+  - code: "AREA"
+    name_cn: "面积测量"
+    name_en: "Area (m²)"
+  - code: "VOL"
+    name_cn: "体积测量"
+    name_en: "Volume (m³)"
+
+# 连接性
+connectivity:
+  wifi_ssid: "KT-C03"
+  app_name: "GY-mfdmt"
+
+# 产品外观锚点（抠图与审计用，防止漂移）
+appearance_anchors:
+  body_color: "银灰机身"
+  trim_color: "橙色包边"
+  grip: "黑色颗粒防滑区"
+  labels:
+    - "GUANGYAN 品牌标志"
+    - "7.0x 倍率标识"
+    - "C03 型号标识"
+  features:
+    - "四开孔（长焦/广角/发射/接收）"
+    - "2.4寸侧屏"
+    - "顶部四按键（⬅ ➡ M S）"
+    - "侧面四按键（Ⓥ Ⓧ ▲ ▼）"
+
+# JTBD 任务（焦糖布丁理论）
+jobs_to_be_done:
+  - job: "发现目标"
+    description: "在远距离精确发现并锁定测量目标"
+  - job: "得到数据"
+    description: "快速获得距离/角度/水平/垂直的精确数值"
+  - job: "保留语境"
+    description: "拍照录像保存测量时的视觉画面与数据"
+  - job: "分享结果"
+    description: "通过WiFi和APP将测量数据同步到手机分享"
+
+# FAB 卖点矩阵
+fab_matrix:
+  - feature: "7X光学变焦 + 6X电子变焦"
+    advantage: "比肉眼近7-42倍"
+    benefit: "2000米外看清细节"
+  - feature: "双摄系统（长焦F1.6 + 广角F2.8）"
+    advantage: "大光圈暗光也能拍"
+    benefit: "黎明黄昏也能作业"
+  - feature: "全自动对焦 ≤0.3s"
+    advantage: "无需手动调焦"
+    benefit: "抬手即测不放过瞬间"
+  - feature: "905nm Class 1 激光"
+    advantage: "人眼安全级"
+    benefit: "长时间使用无忧"
+  - feature: "四模式测量（DST/旗杆/面积/体积）"
+    advantage: "一台设备覆盖多种场景"
+    benefit: "工程/林业/户外全适配"
+  - feature: "WiFi + APP 实时同步"
+    advantage: "数据即时传手机"
+    benefit: "现场出报告不用手抄"

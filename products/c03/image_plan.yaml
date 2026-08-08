@@ -1,0 +1,116 @@
+# C03 图位规划 — 阿里国际站 6 张主图
+# 理论依据: AIDA 注意力模型 + JTBD 任务场景 + FAB 卖点矩阵
+# 合规依据: Alibaba Image Guidelines（白底纯白/首图无文字/产品占60-85%）
+
+images:
+  # ── 图1: 白底主图 (Attention) ──
+  - slot: 1
+    name: "white_bg"
+    name_cn: "白底主图"
+    theory: "AIDA-Attention / Baymard-专业信任"
+    purpose: "停止滑动，建立专业第一印象"
+    type: "white_bg"
+    size: "1000x1000"
+    background: "纯白 RGB(255,255,255)"
+    product_angle: "正面 3/4 角度"
+    text: "无（合规：首图禁止文字/水印/LOGO）"
+    product_ratio: 0.79
+    audit_gate: "visual=white"
+
+  # ── 图2: 场景图 (Interest) ──
+  - slot: 2
+    name: "scene_outdoor"
+    name_cn: "场景图—户外远测"
+    theory: "AIDA-Interest / JTBD-发现目标+得到数据"
+    purpose: "让买家想象使用场景"
+    type: "scene_compose"
+    size: "1000x1000"
+    background_prompt: >
+      Outdoor mountain ridge at golden hour, rolling hills stretching to horizon,
+      warm cinematic light, shallow depth of field background blur,
+      professional surveyor perspective, no people, no text,
+      clean atmospheric photography style, premium product backdrop
+    product_angle: "侧面"
+    product_position: "bottom_center"
+    product_scale: 0.55
+    audit_gate: "visual=scene"
+
+  # ── 图3: 功能图 (Interest→Desire) ──
+  - slot: 3
+    name: "feature_dualcam"
+    name_cn: "功能图—7X双摄系统"
+    theory: "AIDA-Interest→Desire / FAB-Feature→Advantage"
+    purpose: "展示核心功能"
+    type: "sellpoint_compose"
+    size: "1000x1000"
+    background: "浅灰渐变"
+    product_angle: "正面"
+    title: "7X OPTICAL + DUAL CAMERA"
+    subtitle: "See Farther. Measure Precisely."
+    points:
+      - "7X Optical Magnification"
+      - "6X Digital Zoom (1X-6X)"
+      - "Dual Camera: Tele F1.6 + Wide F2.8"
+      - "Auto-Focus in 0.3s"
+      - "4 Modes: DST / Flagpole / Area / Volume"
+    audit_gate: "visual=any"
+
+  # ── 图4: 规格图 (Desire) ──
+  - slot: 4
+    name: "spec_table"
+    name_cn: "规格图—参数表"
+    theory: "AIDA-Desire / FAB-Feature / 视觉层级三级"
+    purpose: "消除参数疑虑"
+    type: "spec_table"
+    size: "1000x1000"
+    specs:
+      - ["Model", "C03-15 / C03-20"]
+      - ["Max Range", "1500m / 2000m"]
+      - ["Accuracy", "±0.5m / ±1m"]
+      - ["Magnification", "7X Optical + 6X Digital"]
+      - ["Laser", "905nm Class 1"]
+      - ["Camera", "720P Dual (Tele F1.6 + Wide F2.8)"]
+      - ["Display", "2.4 inch IPS 320x240"]
+      - ["Battery", "1250mAh, ≥2.5h"]
+      - ["Dimensions", "110x78x44mm, 246g"]
+      - ["WiFi", "KT-C03 / GY-mfdmt APP"]
+    audit_gate: "visual=any"
+
+  # ── 图5: 信任图 (Desire→Action) ──
+  - slot: 5
+    name: "trust_cert"
+    name_cn: "信任图—品质认证"
+    theory: "Cialdini-权威原则 / Baymard-采购信任"
+    purpose: "建立采购信任"
+    type: "sellpoint_compose"
+    size: "1000x1000"
+    background: "深色科技感 #1a1a2e → #16213e"
+    product_angle: "3/4 俯视"
+    title: "ENGINEERED FOR PRECISION"
+    subtitle: "Class 1 Eye-Safe Laser | Auto-Focus"
+    points:
+      - "905nm Class 1 Laser — Eye-Safe Certified"
+      - "Full Auto-Focus System"
+      - "95% Eyepiece Transmittance"
+      - "IP-grade Sealed Optics"
+      - "Manufacturer: Shenzhen GUANGYAN"
+    audit_gate: "visual=any"
+
+  # ── 图6: 卖点图 (Action) ──
+  - slot: 6
+    name: "sellpoint_jtbd"
+    name_cn: "卖点图—JTBD四任务"
+    theory: "JTBD-四任务 / Cialdini-社会认同"
+    purpose: "给出购买理由"
+    type: "sellpoint_compose"
+    size: "1000x1000"
+    background: "户外暖色调"
+    product_angle: "侧面使用状态"
+    title: "VIEW. MEASURE. RECORD. CONNECT."
+    subtitle: "One Device. Four Jobs."
+    points:
+      - "VIEW — 7X optical sees what eyes cannot"
+      - "MEASURE — Laser precision to 2000m"
+      - "RECORD — Photo & video with data overlay"
+      - "CONNECT — WiFi sync to phone instantly"
+    audit_gate: "visual=any"

@@ -1,0 +1,143 @@
+#!/usr/bin/env python3
+"""
+kt-image-forge CLI
+
+Usage:
+  kt-image-forge generate <sku> <source_image> [--output-dir DIR]
+  kt-image-forge cutout <input_image> --output-dir DIR [--name PREFIX]
+  kt-image-forge bg <prompt> --output PATH [--size SIZE]
+  kt-image-forge audit <image> [--sku SKU] [--ref CUTOUT] [--bg TYPE]
+  kt-image-forge list
+  kt-image-forge facts <sku>
+"""
+
+import sys
+import json
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+
+def cmd_generate(sku, source_image, output_dir=None):
+    from forge.pipeline import ForgePipeline
+    from forge.config import ForgeConfig
+    cfg = ForgeConfig.from_env()
+    pipeline = ForgePipeline(cfg)
+    source = Path(source_image)
+    out = Path(output_dir) if output_dir else PROJECT_ROOT / "outputs" / sku
+    result = pipeline.run_full(sku, source, out)
+    print(f"\n✅ {len(result['images'])} images generated")
+    print(f"   Contact sheet: {result['contact_sheet']}")
+    print(f"   Audit report: {result['audit_report']}")
+    print(f"   Audit: {sum(1 for r in result['audit'] if r.passed)}/{len(result['audit'])} passed")
+
+
+def cmd_cutout(input_image, output_dir, name_prefix="product"):
+    from forge.cutout import process_cutout
+    result = process_cutout(Path(input_image), Path(output_dir), name_prefix)
+    print(f"✅ Cutout complete")
+    print(f"   Alpha: {result['alpha']}")
+    print(f"   White: {result['white']}")
+
+
+def cmd_bg(prompt, output_path, size="1024x1024"):
+    from forge.pipeline import ForgePipeline
+    from forge.config import ForgeConfig
+    cfg = ForgeConfig.from_env()
+    pipeline = ForgePipeline(cfg)
+    result = pipeline.generate_with_fallback(prompt, size=size, output_path=Path(output_path))
+    if result.success:
+        print(f"✅ Background generated: {result.image_path} (engine={result.engine_name})")
+    else:
+        print(f"❌ Failed: {result.error}")
+
+
+def cmd_audit(image_path, sku=None, ref=None, bg="any"):
+    from forge.audit import run_full_audit
+    from forge.facts import load_facts
+    facts = load_facts(sku) if sku else None
+    ref_path = Path(ref) if ref else None
+    report = run_full_audit(Path(image_path), facts, ref_path, expected_bg=bg)
+    status = "✅ PASS" if report.passed else "❌ FAIL"
+    print(f"{status}: {image_path}")
+    for issue in report.issues:
+        print(f"  {issue.severity} [{issue.gate}] {issue.message}")
+
+
+def cmd_list():
+    products_dir = PROJECT_ROOT / "products"
+    for d in sorted(products_dir.iterdir()):
+        if d.is_dir() and (d / "facts.yaml").exists():
+            print(d.name)
+
+
+def cmd_facts(sku):
+    from forge.facts import load_facts
+    facts = load_facts(sku)
+    print(json.dumps(facts, ensure_ascii=False, indent=2))
+
+
+def main():
+    if len(sys.argv) < 2:
+        print(__doc__)
+        sys.exit(1)
+
+    cmd = sys.argv[1]
+
+    if cmd == "generate":
+        if len(sys.argv) < 4:
+            print("Usage: generate <sku> <source_image> [--output-dir DIR]")
+            sys.exit(1)
+        sku = sys.argv[2]
+        source = sys.argv[3]
+        output_dir = None
+        if "--output-dir" in sys.argv:
+            output_dir = sys.argv[sys.argv.index("--output-dir") + 1]
+        cmd_generate(sku, source, output_dir)
+
+    elif cmd == "cutout":
+        if len(sys.argv) < 4:
+            print("Usage: cutout <input_image> --output-dir DIR [--name PREFIX]")
+            sys.exit(1)
+        input_img = sys.argv[2]
+        output_dir = sys.argv[sys.argv.index("--output-dir") + 1] if "--output-dir" in sys.argv else "cutouts"
+        name = sys.argv[sys.argv.index("--name") + 1] if "--name" in sys.argv else "product"
+        cmd_cutout(input_img, output_dir, name)
+
+    elif cmd == "bg":
+        if len(sys.argv) < 4:
+            print("Usage: bg <prompt> --output PATH [--size SIZE]")
+            sys.exit(1)
+        prompt = sys.argv[2]
+        output = sys.argv[sys.argv.index("--output") + 1]
+        size = sys.argv[sys.argv.index("--size") + 1] if "--size" in sys.argv else "1024x1024"
+        cmd_bg(prompt, output, size)
+
+    elif cmd == "audit":
+        if len(sys.argv) < 3:
+            print("Usage: audit <image> [--sku SKU] [--ref CUTOUT] [--bg TYPE]")
+            sys.exit(1)
+        image = sys.argv[2]
+        sku = sys.argv[sys.argv.index("--sku") + 1] if "--sku" in sys.argv else None
+        ref = sys.argv[sys.argv.index("--ref") + 1] if "--ref" in sys.argv else None
+        bg = sys.argv[sys.argv.index("--bg") + 1] if "--bg" in sys.argv else "any"
+        cmd_audit(image, sku, ref, bg)
+
+    elif cmd == "list":
+        cmd_list()
+
+    elif cmd == "facts":
+        if len(sys.argv) < 3:
+            print("Usage: facts <sku>")
+            sys.exit(1)
+        cmd_facts(sys.argv[2])
+
+    else:
+        print(f"Unknown command: {cmd}")
+        print(__doc__)
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
