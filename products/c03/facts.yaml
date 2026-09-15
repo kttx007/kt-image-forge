@@ -1,7 +1,10 @@
-# C03 多功能激光测距望远镜 — 冻结事实卡
-# 数据来源: C03_说明书_AI友好版.md（设备官方使用手册）
-# 事实优先级: 冻结产品手册 > 知识库文件 > 原始参考材料
-# 审计规则: 图中任何参数文案必须与此文件一致，不一致则审计失败
+# C03 多功能激光测距望远镜 — 当前事实与营销确认卡
+# 事实来源分层:
+# 1) 产品说明书/规格资料
+# 2) 产品负责人/业务负责人明确确认
+# 3) 已由公司美工制作并经内部审核使用的中文/英文营销资产
+# 4) 历史 AI 推演文件仅作参考，不得覆盖 1-3
+# 原则: 真实性约束锁产品结构和真实能力，不把成熟营销资产默认当成“不可信”。
 
 product:
   sku: "C03"
@@ -93,6 +96,8 @@ physical:
   weight_g: 246
   package_dimensions_mm: "131.5 × 176.5 × 73"
   package_weight_g: 580
+  ingress_protection: "IP65"
+  magnetic_mount: true
 
 # 测量模式
 modes:
@@ -109,12 +114,37 @@ modes:
     name_cn: "体积测量"
     name_en: "Volume (m³)"
 
-# 连接性
+# 连接与影像能力
 connectivity:
+  wifi: true
   wifi_ssid: "KT-C03"
   app_name: "GY-mfdmt"
+  app_connect: true
 
-# 产品外观锚点（抠图与审计用，防止漂移）
+media:
+  photo: true
+  video: true
+  video_picture_in_picture: true
+  dual_camera: true
+  low_light_night_viewing: true
+  night_viewing_positioning: "普通夜间/低照度观察能力；可作为辅助卖点，不包装成军用级夜视或热成像"
+
+# 2026-09-15 业务负责人明确确认，可用于营销设计
+owner_confirmed_marketing_features:
+  confirmed_on: "2026-09-15"
+  source: "业务负责人明确确认 + 已审核中文/英文营销资产"
+  features:
+    - "IP65"
+    - "磁吸"
+    - "WiFi 连接 APP"
+    - "拍照与录像"
+    - "视频画中画 / Picture-in-Picture"
+    - "普通夜间/低照度观察能力"
+  instruction: >
+    以上功能不再因为旧 AI 文档或单一说明书摘录缺失而默认禁用。
+    若未来出现真实硬件版本差异或新证据冲突，再针对具体 SKU 单独确认。
+
+# 产品外观锚点（生成与审计用，必须严格锁定）
 appearance_anchors:
   body_color: "银灰机身"
   trim_color: "橙色包边"
@@ -127,36 +157,53 @@ appearance_anchors:
     - "四开孔（长焦/广角/发射/接收）"
     - "2.4寸侧屏"
     - "顶部四按键（⬅ ➡ M S）"
-    - "侧面四按键（Ⓥ Ⓧ ▲ ▼）"
+    - "侧面按键与接口按真实资产保留"
+  non_negotiable:
+    - "不增删镜头/孔位"
+    - "不改变按键数量和位置"
+    - "不改变机身比例、外壳曲线、橙色包边与黑色握持区"
+    - "不把屏幕、Logo、型号和接口凭空换位"
 
-# JTBD 任务（焦糖布丁理论）
+# JTBD 任务
 jobs_to_be_done:
   - job: "发现目标"
-    description: "在远距离精确发现并锁定测量目标"
+    description: "在远距离快速发现并锁定目标"
   - job: "得到数据"
-    description: "快速获得距离/角度/水平/垂直的精确数值"
+    description: "快速获得距离与相关测量数据"
   - job: "保留语境"
-    description: "拍照录像保存测量时的视觉画面与数据"
+    description: "拍照、录像、画中画保留目标与测量现场"
   - job: "分享结果"
-    description: "通过WiFi和APP将测量数据同步到手机分享"
+    description: "通过 WiFi 和 APP 将影像/信息连接到手机"
 
-# FAB 卖点矩阵
+# FAB / NFABE 卖点矩阵
 fab_matrix:
-  - feature: "7X光学变焦 + 6X电子变焦"
-    advantage: "比肉眼近7-42倍"
-    benefit: "2000米外看清细节"
-  - feature: "双摄系统（长焦F1.6 + 广角F2.8）"
-    advantage: "大光圈暗光也能拍"
-    benefit: "黎明黄昏也能作业"
+  - feature: "7X 光学 + 1-6X 数字放大"
+    advantage: "远处目标更容易识别"
+    benefit: "减少反复移动和靠近目标的时间"
+  - feature: "双摄系统（长焦 F1.6 + 广角 F2.8）"
+    advantage: "兼顾远目标和环境语境"
+    benefit: "测量同时更容易记录现场"
   - feature: "全自动对焦 ≤0.3s"
-    advantage: "无需手动调焦"
-    benefit: "抬手即测不放过瞬间"
-  - feature: "905nm Class 1 激光"
-    advantage: "人眼安全级"
-    benefit: "长时间使用无忧"
+    advantage: "减少手动调焦动作"
+    benefit: "抬手即可快速进入观察与测量"
   - feature: "四模式测量（DST/旗杆/面积/体积）"
-    advantage: "一台设备覆盖多种场景"
-    benefit: "工程/林业/户外全适配"
-  - feature: "WiFi + APP 实时同步"
-    advantage: "数据即时传手机"
-    benefit: "现场出报告不用手抄"
+    advantage: "一台设备覆盖更多任务"
+    benefit: "户外、工程、林业、高尔夫等场景切换成本更低"
+  - feature: "WiFi + APP + 拍照录像 + 画中画"
+    advantage: "观察、测量、记录、连接形成一体化工作流"
+    benefit: "现场结果更直观、更容易保存和分享"
+  - feature: "IP65 + 磁吸"
+    advantage: "环境适应性和临时固定方式更灵活"
+    benefit: "复杂户外/现场使用更省心"
+
+# 营销资产使用机制
+marketing_asset_policy:
+  approved_marketing_assets_are_evidence: true
+  priority_order:
+    - "已审核中文/英文营销图、详情页、视频关键帧、成熟产品渲染"
+    - "真实原始实拍"
+    - "已审计透明 PNG / 抠图资产"
+    - "AI 只负责场景、氛围、构图扩展与非产品部分"
+  conflict_rule: >
+    当营销资产与说明书存在明确且影响对外宣称的冲突时才升级确认；
+    不因单一文档未写到某功能就自动把公司已确认、已审核使用的功能判为不存在。
