@@ -1,16 +1,12 @@
-# C03 阿里国际站首图 LOOP 方案 — 6 个独立 Hero 测试假设
-# 2026-09-15 修订
-# 核心变化:
-# - 不再把 6 张图僵硬映射为 AIDA 顺序；6 张都必须能独立承担“首图”职责
-# - 不再默认白底为第一张；白底图作为基础资产保留，但 Hero 优先测试场景化、高冲击版本
-# - 优先使用公司已审核营销图、视频关键帧、成熟产品渲染和已有透明 PNG
-# - 真实性约束只锁产品结构/真实能力；场景、灯光、镜头、构图、视觉叙事大胆优化
+# C03 阿里国际站首图 LOOP 方案 — 6 个风格不一、可独立投放的 Hero 测试
+# 2026-09-15 修订：回归六种不同购买动机/视觉风格，不把“正面视频画中画”误当成统一模板。
+# 核心原则：概念与素材来源解耦。每张图都从公司现有已审核营销资产中挑最适合的产品母版，实拍只是素材池之一。
 
 meta:
   platform: "Alibaba International"
   output_size: "1000x1000"
   mode: "six_independent_first_image_candidates"
-  primary_goal: "提高搜索结果页停留、点击、询盘质量与重复铺品差异化"
+  primary_goal: "用六种不同购买动机测试搜索结果页停留、点击、询盘质量和重复铺品差异化"
   loop_metrics:
     - impressions
     - clicks
@@ -19,141 +15,186 @@ meta:
     - qualified_inquiries
     - sample_orders
     - orders
-  asset_priority:
-    - "已审核中文/英文营销图"
-    - "视频关键帧 / 画中画素材"
-    - "成熟产品渲染 / 已有透明 PNG"
-    - "原始实拍"
-    - "AI 仅生成非产品部分"
+  asset_selection_rule:
+    principle: "先选最能支持当前营销假设的产品资产，不固定只用实拍、正面或某一种角度"
+    source_pool:
+      - "公司已审核中文/英文营销图"
+      - "成熟白底精修图 / 产品渲染"
+      - "视频关键帧 / 真实画中画素材"
+      - "已有透明 PNG / 历史精修产品层"
+      - "原始多角度实拍"
+    selection_dimensions:
+      - "视觉冲击力"
+      - "是否最能证明该张图的核心卖点"
+      - "产品结构是否准确"
+      - "角度是否适合当前场景和文案"
+      - "手机缩略图下是否一眼能懂"
+    important: >
+      已审核营销资产不是低优先级证据。若它比原始实拍更完整、更清晰、更具商业冲击力，优先使用。
+      实拍主要承担结构校验、补角度、比例和真实性参考，不得反向绑架创意。
   hard_product_lock:
-    - "机身比例与轮廓"
+    - "真实机身比例、轮廓与外壳曲线"
     - "前端四孔/镜头结构"
-    - "顶部及侧面按键"
-    - "侧屏、接口、目镜"
-    - "橙色包边、黑色握持区"
-    - "Logo、型号、真实材质"
+    - "顶部与侧面按键、接口、侧屏、目镜"
+    - "橙色包边、黑色握持区、银灰机身"
+    - "Logo、型号、真实材质与真实屏幕结构"
+  confirmed_marketing_features:
+    - "IP65"
+    - "磁吸"
+    - "WiFi + APP"
+    - "Photo & Video"
+    - "Picture-in-Picture / 视频画中画"
+    - "普通夜间/低照度观察能力"
   creative_freedom:
-    - "场景"
-    - "灯光"
-    - "镜头"
-    - "氛围"
-    - "背景"
-    - "图形化测距/UI辅助"
-    - "营销文案与视觉层级"
+    - "场景、构图、镜头、灯光、天气、氛围"
+    - "测距 UI、信息图层、手机 APP 关系"
+    - "英文营销文案和视觉层级"
+    - "局部环境融合、阴影、反射、景深"
 
 images:
   - slot: 1
-    name: "hero_video_pip"
-    name_cn: "视频画中画 Hero"
-    hypothesis: "正面/3-4 产品 + 真实屏幕/视频画中画能最快建立差异化和科技感"
-    priority: 1
-    preferred_product_asset:
-      - "正面或正面3/4，屏幕可见"
-      - "公司已审核视频画中画营销素材"
-      - "已有 front alpha / 45deg alpha 作为结构校验"
-    scene: "高端户外远距观察场景，山谷/工程远景，清晨或金色时刻；屏幕或PIP展示远端目标画面"
-    product_ratio: "58-68%"
-    title: "SEE. MEASURE. RECORD."
-    subtitle: "Smart Rangefinder Binoculars with Video PIP"
+    code: "A"
+    name: "alpine_precision"
+    name_cn: "ALPINE PRECISION — 远距能力英雄首图"
+    hypothesis: "买家首先被远距能力、专业感与产品旗舰感吸引，适合作为最稳的品类+性能首图"
+    target_need: "看得远、测得快、设备专业"
+    style: "Leica / DJI 式高端户外器材广告；深绿+暖金；克制、高级、摄影感"
+    scene: "高端户外山脊/峡谷远景，晨曦或薄雾；远端目标形成明显纵深，背景不喧宾夺主"
+    preferred_asset: "最有冲击力的正面3/4或侧前3/4成熟营销图/白底渲染，必要时实拍校验"
+    product_ratio: "62-70%"
+    title: "SEE FAR. MEASURE FAST."
+    subtitle: "C03 Smart Laser Rangefinder Binoculars"
     proof_points:
       - "Up to 2000m*"
       - "7X Optical"
-      - "WiFi APP"
-    visual_hook: "产品正面与屏幕是第一视觉中心；PIP画面制造‘它真的能看、能录、能测’的一眼理解"
-    notes: "首轮默认主推；*2000m 对应 C03-20"
+      - "≤0.3s Auto Focus"
+    evidence_note: "*2000m applies to C03-20 model"
+    visual_hook: "近处大产品 + 远处目标 + 轻量测距信息；不使用可见红色激光束"
+    nfabe: "Need=远距识别 → Feature=2000m/7X/AF → Advantage=更快看到和锁定 → Benefit=减少靠近与反复调焦 → Evidence=真实产品+真实参数"
 
   - slot: 2
-    name: "hero_long_range"
-    name_cn: "超远距发现 Hero"
-    hypothesis: "大纵深场景 + 明确远目标能强化量程价值"
-    priority: 2
-    scene: "山脊、峡谷、林业测量或大型工程现场；前景产品大，远景目标小而清晰"
-    product_angle: "正面3/4优先，次选正侧面"
-    product_ratio: "60-72%"
-    title: "SEE FAR. MEASURE FAST."
-    subtitle: "Up to 2000m Laser Ranging*"
-    proof_points:
-      - "≤0.3s Auto Focus"
-      - "7X Optical"
-      - "4 Measurement Modes"
-    visual_hook: "近大远小的尺度反差 + 远目标框，建立距离感，不画可见红色激光束"
-
-  - slot: 3
-    name: "hero_smart_connect"
-    name_cn: "WiFi APP 智能连接 Hero"
-    hypothesis: "设备 + 手机 APP + 现场影像能把硬件从普通测距仪升级成智能工作流"
-    priority: 3
-    scene: "专业户外工作台/工程现场/车辆尾门，设备与手机同画面"
-    product_angle: "屏幕侧或正面3/4"
-    product_ratio: "52-62%"
-    title: "MEASURE. RECORD. SHARE."
-    subtitle: "WiFi APP Connected Workflow"
-    proof_points:
-      - "Photo & Video"
-      - "Picture-in-Picture"
-      - "GY-mfdmt APP"
-    visual_hook: "手机不是装饰，而是承担‘记录和分享’的第二信息层"
-
-  - slot: 4
-    name: "hero_ip65_magnetic"
-    name_cn: "IP65 + 磁吸现场 Hero"
-    hypothesis: "真实恶劣环境 + 固定方式能快速建立耐用、专业、好用的价值认知"
-    priority: 4
-    scene: "轻雨/水滴/雾气的工程或户外现场；可有金属设备/车辆/立柱作为真实磁吸使用语境"
-    product_angle: "正面3/4或屏幕侧，结构必须来自真实资产"
-    product_ratio: "56-66%"
-    title: "READY FOR THE FIELD."
-    subtitle: "IP65 Protection · Magnetic Mount"
-    proof_points:
-      - "Outdoor Ready"
-      - "Quick Magnetic Placement"
-      - "Compact 246g Body"
-    visual_hook: "水滴、金属材质和真实吸附语境形成触觉联想；禁止浸水/潜水式夸张"
-
-  - slot: 5
-    name: "hero_measurement_modes"
-    name_cn: "多场景测量 Hero"
-    hypothesis: "把功能翻译成具体任务，比堆参数更能驱动采购者自我代入"
-    priority: 5
-    scene: "工程/林业/旗杆/户外目标的单一主场景，其他用途用极简小图标或轻量分区暗示，不做廉价拼贴"
-    product_angle: "正面3/4"
-    product_ratio: "58-68%"
-    title: "ONE DEVICE. MORE JOBS."
+    code: "B"
+    name: "field_measurement"
+    name_cn: "FIELD MEASUREMENT — 工程/林业专业测量首图"
+    hypothesis: "专业采购者对‘一台设备能完成多少现场任务’比单纯2000m更敏感"
+    target_need: "工程、林业、仓储、建筑现场的多任务测量"
+    style: "灰蓝工业纪实；理性、B2B、技术感强，不做消费电子海报"
+    scene: "远处工业设施、建筑立面、仓储/工程场地或林区边缘；背景略虚化"
+    preferred_asset: "产品完整正面/3/4，优先选择能清楚看到屏幕或按键逻辑的成熟资产"
+    product_ratio: "58-66%"
+    title: "MEASURE MORE THAN DISTANCE."
     subtitle: "Distance · Flagpole · Area · Volume"
     proof_points:
       - "DST"
       - "FLAG"
       - "AREA / VOL"
-    visual_hook: "用一个强主场景承载功能，不做四宫格PPT"
+    benefit_line: "One Device for Field Measurement."
+    visual_hook: "极简测量线/面积框/目标标记；不是把所有参数做成PPT"
+    nfabe: "Need=现场多任务 → Feature=四模式 → Advantage=少换设备 → Benefit=提高现场效率 → Evidence=模式名称+真实产品"
+
+  - slot: 3
+    code: "C"
+    name: "smart_connected"
+    name_cn: "SMART CONNECTED — WiFi APP / 视频画中画差异化首图"
+    hypothesis: "C03真正拉开普通测距望远镜差距的是观察→测量→记录→连接→分享的完整闭环"
+    target_need: "不仅要得到一个数字，还要保留画面、记录并分享"
+    style: "深墨绿+日落橙+偏高级户外科技；科技感来自真实工作流，不来自蓝色网格"
+    scene: "户外工作台/车辆尾门/工程现场，C03为主，手机为辅助信息层"
+    preferred_asset: >
+      优先使用公司已审核的正面/3/4屏幕可见营销图、视频关键帧、视频画中画素材；
+      手机必须使用真实 GY-mfdmt APP 截图或真实营销资产，不生成假 UI。
+    product_ratio: "52-62%"
+    title: "MEASURE. RECORD. SHARE."
+    subtitle: "From Field to Phone."
+    proof_points:
+      - "WiFi APP"
+      - "Photo & Video"
+      - "Picture-in-Picture"
+    visual_hook: "设备画面/侧屏/手机APP形成一条清晰信息流，PIP是本方案的重要武器，但只属于本方案，不扩散成六张统一模板"
+    nfabe: "Need=现场记录与共享 → Feature=WiFi/APP/视频/PIP → Advantage=设备与手机形成闭环 → Benefit=少手抄、易复盘和分享 → Evidence=真实APP/真实视频画面"
+
+  - slot: 4
+    code: "D"
+    name: "optical_engineering"
+    name_cn: "OPTICAL ENGINEERING — 高端光学技术首图"
+    hypothesis: "技术型买家会被精密光学结构、双摄、自动对焦和安全激光建立的工程可信度打动"
+    target_need: "确认这不是廉价测距玩具，而是精密光学测量设备"
+    style: "高级黑灰光学实验室 / 镜片反射环境；克制、专业、工业设计摄影"
+    scene: "暗黑灰光学实验室氛围、玻璃反射、高光轮廓；不生成爆炸结构、不虚构内部光路"
+    preferred_asset: "优先使用前端四孔完整、质感最佳的正面或正面3/4营销图；实拍前端四孔用于结构校验"
+    product_ratio: "64-70%"
+    title: "ENGINEERED TO SEE & MEASURE."
+    subtitle: "Precision Optics. Fast Response."
+    proof_points:
+      - "7X Optical"
+      - "Dual 720P Camera"
+      - "905nm Class 1 Laser"
+      - "Auto Focus ≤0.3s"
+    visual_hook: "四孔光学结构成为视觉主角，最多3-4个细线callout；视觉价值来自材质与光学精度，不靠廉价科技纹理"
+    nfabe: "Need=技术可信度 → Feature=光学/双摄/AF/Class1 → Advantage=更完整的观察测量系统 → Benefit=降低专业采购的不确定感 → Evidence=真实结构与参数"
+
+  - slot: 5
+    code: "E"
+    name: "flag_lock_golf"
+    name_cn: "FLAG LOCK — 高尔夫/旗杆锁定细分首图"
+    hypothesis: "针对 golf rangefinder binoculars / flag lock 关键词，旗杆锁定场景比通用户外图更直接"
+    target_need: "快速锁定旗杆并得到距离"
+    style: "清晨精品高尔夫球场；大面积草坪、远处旗杆、轻雾、阳光；干净、运动高端"
+    scene: "高尔夫球场单一主场景，远处旗杆出现完整 lock ring / 目标框"
+    preferred_asset: "最有旗舰感的前景3/4产品资产；不生成假握手，不让人物遮住产品"
+    product_ratio: "55-64%"
+    title: "LOCK THE FLAG. KNOW THE DISTANCE."
+    subtitle: "FLAGPOLE LOCK MODE"
+    proof_points:
+      - "7X Optical"
+      - "Fast Auto Focus"
+      - "Flagpole Lock"
+    visual_hook: "旗杆是唯一远端目标，画面干净；用细分关键词提高特定Listing相关性"
+    nfabe: "Need=旗杆快速锁定 → Feature=FLAG模式/7X/AF → Advantage=目标更明确 → Benefit=更快做距离判断 → Evidence=真实FLAG能力"
 
   - slot: 6
-    name: "hero_oem_business"
-    name_cn: "B2B / OEM 采购 Hero"
-    hypothesis: "高品质产品 Hero + 采购信号能提高品牌商、经销商和工程客户的询盘质量"
-    priority: 6
-    scene: "高端产品工作台 / 光学检测 / 现代工厂背景，保持真实商业摄影质感"
-    product_angle: "最有冲击力的正面3/4，屏幕可见优先"
-    product_ratio: "58-68%"
+    code: "F"
+    name: "b2b_oem_business"
+    name_cn: "B2B / OEM BUSINESS — 国际站采购首图"
+    hypothesis: "品牌商、经销商和工程客户需要一眼知道这不是单纯零售成品，而是可以进入其产品线的成熟产品"
+    target_need: "找可合作、可采购、可进入产品线的供应商"
+    style: "暖白+深石墨+橙色识别线；现代产品展示台/轻度生产质检环境；国际B2B旗舰感"
+    scene: "现代光学产品展示台或非常轻的生产/质检背景虚化，产品仍是绝对主角"
+    preferred_asset: "最完整、最商业化的成熟白底/渲染/3/4产品资产；可以使用正面，也可以使用最强侧前角度，不限定一种姿势"
+    product_ratio: "60-65%"
     title: "BUILT FOR YOUR PRODUCT LINE."
-    subtitle: "C03-15 / C03-20 · OEM/ODM Available"
+    subtitle: "C03-15 / C03-20"
     proof_points:
       - "1500m / 2000m"
-      - "WiFi APP + Video"
-      - "Professional Manufacturer"
-    visual_hook: "不做传统工厂拼贴，把产品本身拍出旗舰感，再给出轻量 B2B 信号"
+      - "WiFi APP · Dual Camera"
+      - "OEM / ODM AVAILABLE"
+    visual_hook: "只给三个采购信号，不喊参数墙；像供应商旗舰页，而不是消费电子促销海报"
+    nfabe: "Need=降低选供应商风险 → Feature=双型号+成熟功能+OEM/ODM → Advantage=更易进入现有产品线 → Benefit=缩短选品与上市周期 → Evidence=成熟产品形象+供应商能力"
 
-# 首图选择逻辑
+# 初始优先级只是实验顺序，不是最终结论。
 selection_rule:
   first_pass_order:
-    - "hero_video_pip"
-    - "hero_long_range"
-    - "hero_smart_connect"
-    - "hero_ip65_magnetic"
-    - "hero_measurement_modes"
-    - "hero_oem_business"
+    - "alpine_precision"
+    - "smart_connected"
+    - "b2b_oem_business"
+    - "field_measurement"
+    - "optical_engineering"
+    - "flag_lock_golf"
+  initial_reasoning: "A覆盖最大品类需求；C负责核心差异化；F筛选B2B/OEM买家；B覆盖工程任务；D建立技术价值；E用于高尔夫细分关键词。"
   winner_rule: >
-    不凭主观审美直接定终版。用曝光→点击→询盘→有效询盘→订单形成 LOOP；
-    CTR 高但询盘差的图降级，询盘质量高的图进入主推款和相近关键词复制测试。
+    不凭审美拍板。首图上线后记录曝光→点击→CTR→询盘→有效询盘→样品→订单；
+    CTR高但询盘质量差，说明图会吸睛但价值假设不准；询盘质量高的方案进入主推并复制到相近关键词。
   duplicate_listing_rule: >
-    重复铺品不能只换背景。每个 Listing 至少改变一个核心购买任务/首图价值假设，
-    例如远距、视频画中画、WiFi工作流、IP65磁吸、测量模式、OEM采购。
+    重复铺品不能只换背景。每个 Listing 至少改变一个核心购买任务、关键词意图或价值假设。
+    六张之间必须在场景、价值主张、首要证据和视觉语言上明显不同。
+
+# 生产流程
+production_loop:
+  - "先看全部已审核营销图/详情图/视频关键帧，不允许只扫描原始实拍"
+  - "按A-F每个假设单独选产品母版和最佳角度"
+  - "必要时抠图精修，建立锁定产品层；不为了统一而强行把所有图改成同一角度"
+  - "单独生成/设计场景背景"
+  - "产品与环境做真实光影、阴影、反射和景深融合"
+  - "精简英文排版，手机缩略图优先"
+  - "产品结构审计 + 文案事实审计 + 营销冲击力审计"
+  - "上线记录LOOP数据，再决定下一轮局部修改，不整套推倒重来"
