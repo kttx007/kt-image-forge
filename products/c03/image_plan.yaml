@@ -1,116 +1,159 @@
-# C03 图位规划 — 阿里国际站 6 张主图
-# 理论依据: AIDA 注意力模型 + JTBD 任务场景 + FAB 卖点矩阵
-# 合规依据: Alibaba Image Guidelines（白底纯白/首图无文字/产品占60-85%）
+# C03 阿里国际站首图 LOOP 方案 — 6 个独立 Hero 测试假设
+# 2026-09-15 修订
+# 核心变化:
+# - 不再把 6 张图僵硬映射为 AIDA 顺序；6 张都必须能独立承担“首图”职责
+# - 不再默认白底为第一张；白底图作为基础资产保留，但 Hero 优先测试场景化、高冲击版本
+# - 优先使用公司已审核营销图、视频关键帧、成熟产品渲染和已有透明 PNG
+# - 真实性约束只锁产品结构/真实能力；场景、灯光、镜头、构图、视觉叙事大胆优化
+
+meta:
+  platform: "Alibaba International"
+  output_size: "1000x1000"
+  mode: "six_independent_first_image_candidates"
+  primary_goal: "提高搜索结果页停留、点击、询盘质量与重复铺品差异化"
+  loop_metrics:
+    - impressions
+    - clicks
+    - ctr
+    - inquiries
+    - qualified_inquiries
+    - sample_orders
+    - orders
+  asset_priority:
+    - "已审核中文/英文营销图"
+    - "视频关键帧 / 画中画素材"
+    - "成熟产品渲染 / 已有透明 PNG"
+    - "原始实拍"
+    - "AI 仅生成非产品部分"
+  hard_product_lock:
+    - "机身比例与轮廓"
+    - "前端四孔/镜头结构"
+    - "顶部及侧面按键"
+    - "侧屏、接口、目镜"
+    - "橙色包边、黑色握持区"
+    - "Logo、型号、真实材质"
+  creative_freedom:
+    - "场景"
+    - "灯光"
+    - "镜头"
+    - "氛围"
+    - "背景"
+    - "图形化测距/UI辅助"
+    - "营销文案与视觉层级"
 
 images:
-  # ── 图1: 白底主图 (Attention) ──
   - slot: 1
-    name: "white_bg"
-    name_cn: "白底主图"
-    theory: "AIDA-Attention / Baymard-专业信任"
-    purpose: "停止滑动，建立专业第一印象"
-    type: "white_bg"
-    size: "1000x1000"
-    background: "纯白 RGB(255,255,255)"
-    product_angle: "正面 3/4 角度"
-    text: "无（合规：首图禁止文字/水印/LOGO）"
-    product_ratio: 0.79
-    audit_gate: "visual=white"
+    name: "hero_video_pip"
+    name_cn: "视频画中画 Hero"
+    hypothesis: "正面/3-4 产品 + 真实屏幕/视频画中画能最快建立差异化和科技感"
+    priority: 1
+    preferred_product_asset:
+      - "正面或正面3/4，屏幕可见"
+      - "公司已审核视频画中画营销素材"
+      - "已有 front alpha / 45deg alpha 作为结构校验"
+    scene: "高端户外远距观察场景，山谷/工程远景，清晨或金色时刻；屏幕或PIP展示远端目标画面"
+    product_ratio: "58-68%"
+    title: "SEE. MEASURE. RECORD."
+    subtitle: "Smart Rangefinder Binoculars with Video PIP"
+    proof_points:
+      - "Up to 2000m*"
+      - "7X Optical"
+      - "WiFi APP"
+    visual_hook: "产品正面与屏幕是第一视觉中心；PIP画面制造‘它真的能看、能录、能测’的一眼理解"
+    notes: "首轮默认主推；*2000m 对应 C03-20"
 
-  # ── 图2: 场景图 (Interest) ──
   - slot: 2
-    name: "scene_outdoor"
-    name_cn: "场景图—户外远测"
-    theory: "AIDA-Interest / JTBD-发现目标+得到数据"
-    purpose: "让买家想象使用场景"
-    type: "scene_compose"
-    size: "1000x1000"
-    background_prompt: >
-      Outdoor mountain ridge at golden hour, rolling hills stretching to horizon,
-      warm cinematic light, shallow depth of field background blur,
-      professional surveyor perspective, no people, no text,
-      clean atmospheric photography style, premium product backdrop
-    product_angle: "侧面"
-    product_position: "bottom_center"
-    product_scale: 0.55
-    audit_gate: "visual=scene"
+    name: "hero_long_range"
+    name_cn: "超远距发现 Hero"
+    hypothesis: "大纵深场景 + 明确远目标能强化量程价值"
+    priority: 2
+    scene: "山脊、峡谷、林业测量或大型工程现场；前景产品大，远景目标小而清晰"
+    product_angle: "正面3/4优先，次选正侧面"
+    product_ratio: "60-72%"
+    title: "SEE FAR. MEASURE FAST."
+    subtitle: "Up to 2000m Laser Ranging*"
+    proof_points:
+      - "≤0.3s Auto Focus"
+      - "7X Optical"
+      - "4 Measurement Modes"
+    visual_hook: "近大远小的尺度反差 + 远目标框，建立距离感，不画可见红色激光束"
 
-  # ── 图3: 功能图 (Interest→Desire) ──
   - slot: 3
-    name: "feature_dualcam"
-    name_cn: "功能图—7X双摄系统"
-    theory: "AIDA-Interest→Desire / FAB-Feature→Advantage"
-    purpose: "展示核心功能"
-    type: "sellpoint_compose"
-    size: "1000x1000"
-    background: "浅灰渐变"
-    product_angle: "正面"
-    title: "7X OPTICAL + DUAL CAMERA"
-    subtitle: "See Farther. Measure Precisely."
-    points:
-      - "7X Optical Magnification"
-      - "6X Digital Zoom (1X-6X)"
-      - "Dual Camera: Tele F1.6 + Wide F2.8"
-      - "Auto-Focus in 0.3s"
-      - "4 Modes: DST / Flagpole / Area / Volume"
-    audit_gate: "visual=any"
+    name: "hero_smart_connect"
+    name_cn: "WiFi APP 智能连接 Hero"
+    hypothesis: "设备 + 手机 APP + 现场影像能把硬件从普通测距仪升级成智能工作流"
+    priority: 3
+    scene: "专业户外工作台/工程现场/车辆尾门，设备与手机同画面"
+    product_angle: "屏幕侧或正面3/4"
+    product_ratio: "52-62%"
+    title: "MEASURE. RECORD. SHARE."
+    subtitle: "WiFi APP Connected Workflow"
+    proof_points:
+      - "Photo & Video"
+      - "Picture-in-Picture"
+      - "GY-mfdmt APP"
+    visual_hook: "手机不是装饰，而是承担‘记录和分享’的第二信息层"
 
-  # ── 图4: 规格图 (Desire) ──
   - slot: 4
-    name: "spec_table"
-    name_cn: "规格图—参数表"
-    theory: "AIDA-Desire / FAB-Feature / 视觉层级三级"
-    purpose: "消除参数疑虑"
-    type: "spec_table"
-    size: "1000x1000"
-    specs:
-      - ["Model", "C03-15 / C03-20"]
-      - ["Max Range", "1500m / 2000m"]
-      - ["Accuracy", "±0.5m / ±1m"]
-      - ["Magnification", "7X Optical + 6X Digital"]
-      - ["Laser", "905nm Class 1"]
-      - ["Camera", "720P Dual (Tele F1.6 + Wide F2.8)"]
-      - ["Display", "2.4 inch IPS 320x240"]
-      - ["Battery", "1250mAh, ≥2.5h"]
-      - ["Dimensions", "110x78x44mm, 246g"]
-      - ["WiFi", "KT-C03 / GY-mfdmt APP"]
-    audit_gate: "visual=any"
+    name: "hero_ip65_magnetic"
+    name_cn: "IP65 + 磁吸现场 Hero"
+    hypothesis: "真实恶劣环境 + 固定方式能快速建立耐用、专业、好用的价值认知"
+    priority: 4
+    scene: "轻雨/水滴/雾气的工程或户外现场；可有金属设备/车辆/立柱作为真实磁吸使用语境"
+    product_angle: "正面3/4或屏幕侧，结构必须来自真实资产"
+    product_ratio: "56-66%"
+    title: "READY FOR THE FIELD."
+    subtitle: "IP65 Protection · Magnetic Mount"
+    proof_points:
+      - "Outdoor Ready"
+      - "Quick Magnetic Placement"
+      - "Compact 246g Body"
+    visual_hook: "水滴、金属材质和真实吸附语境形成触觉联想；禁止浸水/潜水式夸张"
 
-  # ── 图5: 信任图 (Desire→Action) ──
   - slot: 5
-    name: "trust_cert"
-    name_cn: "信任图—品质认证"
-    theory: "Cialdini-权威原则 / Baymard-采购信任"
-    purpose: "建立采购信任"
-    type: "sellpoint_compose"
-    size: "1000x1000"
-    background: "深色科技感 #1a1a2e → #16213e"
-    product_angle: "3/4 俯视"
-    title: "ENGINEERED FOR PRECISION"
-    subtitle: "Class 1 Eye-Safe Laser | Auto-Focus"
-    points:
-      - "905nm Class 1 Laser — Eye-Safe Certified"
-      - "Full Auto-Focus System"
-      - "95% Eyepiece Transmittance"
-      - "IP-grade Sealed Optics"
-      - "Manufacturer: Shenzhen GUANGYAN"
-    audit_gate: "visual=any"
+    name: "hero_measurement_modes"
+    name_cn: "多场景测量 Hero"
+    hypothesis: "把功能翻译成具体任务，比堆参数更能驱动采购者自我代入"
+    priority: 5
+    scene: "工程/林业/旗杆/户外目标的单一主场景，其他用途用极简小图标或轻量分区暗示，不做廉价拼贴"
+    product_angle: "正面3/4"
+    product_ratio: "58-68%"
+    title: "ONE DEVICE. MORE JOBS."
+    subtitle: "Distance · Flagpole · Area · Volume"
+    proof_points:
+      - "DST"
+      - "FLAG"
+      - "AREA / VOL"
+    visual_hook: "用一个强主场景承载功能，不做四宫格PPT"
 
-  # ── 图6: 卖点图 (Action) ──
   - slot: 6
-    name: "sellpoint_jtbd"
-    name_cn: "卖点图—JTBD四任务"
-    theory: "JTBD-四任务 / Cialdini-社会认同"
-    purpose: "给出购买理由"
-    type: "sellpoint_compose"
-    size: "1000x1000"
-    background: "户外暖色调"
-    product_angle: "侧面使用状态"
-    title: "VIEW. MEASURE. RECORD. CONNECT."
-    subtitle: "One Device. Four Jobs."
-    points:
-      - "VIEW — 7X optical sees what eyes cannot"
-      - "MEASURE — Laser precision to 2000m"
-      - "RECORD — Photo & video with data overlay"
-      - "CONNECT — WiFi sync to phone instantly"
-    audit_gate: "visual=any"
+    name: "hero_oem_business"
+    name_cn: "B2B / OEM 采购 Hero"
+    hypothesis: "高品质产品 Hero + 采购信号能提高品牌商、经销商和工程客户的询盘质量"
+    priority: 6
+    scene: "高端产品工作台 / 光学检测 / 现代工厂背景，保持真实商业摄影质感"
+    product_angle: "最有冲击力的正面3/4，屏幕可见优先"
+    product_ratio: "58-68%"
+    title: "BUILT FOR YOUR PRODUCT LINE."
+    subtitle: "C03-15 / C03-20 · OEM/ODM Available"
+    proof_points:
+      - "1500m / 2000m"
+      - "WiFi APP + Video"
+      - "Professional Manufacturer"
+    visual_hook: "不做传统工厂拼贴，把产品本身拍出旗舰感，再给出轻量 B2B 信号"
+
+# 首图选择逻辑
+selection_rule:
+  first_pass_order:
+    - "hero_video_pip"
+    - "hero_long_range"
+    - "hero_smart_connect"
+    - "hero_ip65_magnetic"
+    - "hero_measurement_modes"
+    - "hero_oem_business"
+  winner_rule: >
+    不凭主观审美直接定终版。用曝光→点击→询盘→有效询盘→订单形成 LOOP；
+    CTR 高但询盘差的图降级，询盘质量高的图进入主推款和相近关键词复制测试。
+  duplicate_listing_rule: >
+    重复铺品不能只换背景。每个 Listing 至少改变一个核心购买任务/首图价值假设，
+    例如远距、视频画中画、WiFi工作流、IP65磁吸、测量模式、OEM采购。
