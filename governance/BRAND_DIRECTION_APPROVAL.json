@@ -1,0 +1,14 @@
+{
+  "status": "user_selected_revised",
+  "selected": "material-led instrument imagery primary; real application scenes secondary",
+  "evidence": "用户明确：图2契合产品材质颜色为主，图1装修家装测绘等场景为辅；图3太难看，文案排版不像合格主图",
+  "supersedes": {
+    "status": "user_selected",
+    "selected": "A precision selection",
+    "evidence": "用户回答：A 暖白精密选型（推荐）",
+    "scope": "统一品牌方向；不等于全部产品身份、事实或最终图片批准"
+  },
+  "rejected": "warm-white oversized blue-number template",
+  "scope": "视觉方向批准；参考图本身不等于最终主图验收或公开发布批准",
+  "drive_source": "https://drive.google.com/drive/folders/1anOjVul_RUxNkBRgS55Fgvimg0fx8AcR"
+}

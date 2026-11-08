@@ -1,0 +1,61 @@
+{
+  "entrypoint": "governance/AGENTS.md",
+  "drive_authorities": {
+    "codex_laser_store": "https://drive.google.com/drive/folders/1anOjVul_RUxNkBRgS55Fgvimg0fx8AcR",
+    "brand_design_os": "https://drive.google.com/drive/folders/1D9pw5pspSKHtINSahkGOnCO8PTXtrjEY",
+    "visual_factory_os_v31": "https://drive.google.com/drive/folders/1b2GV1yIBxjotunOsn77TR2l737kt_Aoy",
+    "visual_factory_loop": "https://drive.google.com/drive/folders/1C-76qZDUYhUmU-vbTZrrYyDe8PEABUJk",
+    "guangyan_visual_loop": "https://drive.google.com/drive/folders/1gWapDGpcpKZ7PVvvyYDcdc3aG7wx9J1k",
+    "c03_loop_archive": "https://drive.google.com/drive/folders/1wwBa-UkKwPpJlN4DIAB3es5W1B-Bguxw"
+  },
+  "authority_order": [
+    "latest explicit user correction",
+    "governance/PRODUCTION_REGISTRY.json",
+    "governance/BRAND_DIRECTION_APPROVAL.json and governance/BRAND_SYSTEM_ANCHOR.json",
+    "governance/USER_CONFIRMED_BUSINESS_FACTS_20261022.json and controlled SKU workbook",
+    "governance/PROGRAM_SUMMARY.json",
+    "CURRENT_STATE.json as derived snapshot only (lives on Drive)"
+  ],
+  "scope": {
+    "store": "GUANGYAN ranging store only",
+    "models": 12,
+    "main_images_per_model": 6,
+    "detail_images_per_model": 8,
+    "required_product_images": 168,
+    "store_pages": [
+      "HOME",
+      "OEMODM"
+    ],
+    "sku_positioning_and_five_points": 83
+  },
+  "production_order": [
+    "P1: twelve highest-spec complete product sets",
+    "P2: remaining 71 SKU complete sets, cumulative 83",
+    "P3: substantive audience/search-intent/scenario/style extensions",
+    "HOME/OEMODM and company/trust/GEO remain in scope",
+    "Human acceptance and explicit public-release approval"
+  ],
+  "current_gate": "P1_twelve_highest_spec_complete_sets_review_and_repair",
+  "counts": {
+    "product_slots": 168,
+    "accepted_product_slots": 0,
+    "accepted_store_pages": 0,
+    "accepted_complete_sets": 0,
+    "single_slot_approval_note": "J1-M05 exact SHA only on Drive; not a full-set approval"
+  },
+  "candidate_does_not_mean_complete": true,
+  "runtime": {
+    "loop": "forge/loop/",
+    "brand": "brand/",
+    "products_local": "products/",
+    "contracts": "contracts/examples/"
+  },
+  "layers": {
+    "brand_book": "brand/ — aesthetic identity & tokens (DesignOS)",
+    "visual_factory_loop": "forge/loop/ — product ad-image authenticity production",
+    "store_program": "governance/ — 12×14 / 83 SKU delivery program",
+    "geo_seo": "research/ — content evidence; not a second product-truth ledger"
+  },
+  "resume_rule": "Read DRIVE_SOURCES + registry, inspect newest Drive assets, then execute first unresolved dependency. No live job may be inferred from a stale state file.",
+  "public_release": false
+}

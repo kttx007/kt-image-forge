@@ -124,6 +124,51 @@ MIT
 
 ---
 
+
+
+## 大工程合并（Drive 正本）
+
+Codex 完整工程在 Google Drive；本仓吸收可执行合同与运行时：
+
+| 层 | 本仓 | Drive 正本 |
+|----|------|-----------|
+| 品牌 DesignOS | `brand/` | [品牌视觉系统](https://drive.google.com/drive/folders/1D9pw5pspSKHtINSahkGOnCO8PTXtrjEY) |
+| Codex 激光作图 | `governance/` | [最新 Codex 作图工程](https://drive.google.com/drive/folders/1anOjVul_RUxNkBRgS55Fgvimg0fx8AcR) |
+| Visual Loop | `forge/loop/` | visual-factory-loop / guangyan-visual-loop |
+| 源地图 | `docs/DRIVE_SOURCES.md` | — |
+
+12×14 槽位骨架：`forge.program.build_p1_job_for_model("C03")` → `forge.loop.create_run(...)`。  
+P1 十二型号矩阵：`governance/data/` · Style Intelligence：`docs/visual-factory-os/`。
+
+## Visual Factory Loop（v0.2）
+
+已合并 Codex 自研 `visual-factory-loop` / `guangyan-visual-loop` 经验：
+
+- 四硬门：`fact_truth` / `product_identity` / `physical_truth` / `locked_slot_immutability`
+- 槽位状态机：`plan → bundle → audit → lock`（同类局修失败两次 → 新分支）
+- Commerce 默认 **whole_image_generation**；密集规格走 hybrid / deterministic
+- Constraint Budget：每槽只传买家任务 + 相关硬约束 + 少量高风险禁令
+- 质量评分：alpha-edge / foreground coverage（吸收 photoclean / rembg Cutout Studio）
+- 眼睛：`vendor/ai-eyes` → MiniMax-M3
+
+文档：`docs/visual-loop/` · 合同：`contracts/examples/` · 运行时：`forge/loop/`
+
+```bash
+# 跑通 LOOP + 审计回归测试
+pip install -r requirements.txt
+python -m pytest tests/ -q
+
+# 规划一套 job
+python -m forge.loop.cli plan --job contracts/examples/job.example.json --out /tmp/plan.json
+python -m forge.loop.cli bundle --job contracts/examples/job.example.json --slot M01 --out /tmp/bundle-m01
+```
+
+原版 JS 对照测试：
+
+```bash
+cd vendor/visual-factory-loop && node --test
+```
+
 ## ⚠️ 当前状态
 
 **v0.1.0 已发布但功能未达用户预期。**
@@ -132,12 +177,12 @@ MIT
 
 ### 用户实际要求但未做的
 
-- [ ] **集成 ai-eyes 项目**（用户已有 github.com/kttx007/ai-eyes）
+- [x] **集成 ai-eyes 项目**（`vendor/ai-eyes` + `forge/loop/eyes.py`）
 - [ ] **使用 MiniMax-M3 原生多模态**直接看图（不是外部 VLM）
 - [ ] **无限画布**能力（Photoshop 风格图层合成）
-- [ ] **真正调研 + 拆解爆款**（Codex 旧报告有，但没延续）
+- [x] **延续 Codex visual-loop / JC02·J13S 经验**（`docs/visual-loop/`）
 - [ ] **第一版图全部重做**（VLM 平均 3/10，已废弃）
 - [ ] **多产品**（只有 C03 一个实例）
-- [ ] **审计重写**（当前审计是摆设）
+- [x] **审计重写**（四硬门 + 证据梯队；SSIM 降为参考）
 
 接手人请从头读 HANDOVER.md。

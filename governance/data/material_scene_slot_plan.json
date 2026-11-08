@@ -1,0 +1,61 @@
+{
+  "set_id": "GUANGYAN-B2B-MATERIAL-SCENE-20261022",
+  "status": "SUPERSEDED_SLOT_ORDER",
+  "scope": "12 highest standard configurations; measurement store only",
+  "visual_authority": "BRAND_DIRECTION_APPROVAL.json",
+  "sequence": [
+    {
+      "slot": "M01",
+      "purpose": "Recognizable product and selected configuration",
+      "mode": "Material-led studio",
+      "copy_limit": "Category + one range claim + secondary SKU",
+      "rule": "Product dominates; contrast adjusted to actual body color"
+    },
+    {
+      "slot": "M02",
+      "purpose": "Buyer application and working context",
+      "mode": "Authentic application scene",
+      "copy_limit": "One outcome headline",
+      "rule": "Handheld renovation/interior surveying; telescope outdoor ranging; bare module engineering integration, not fabricated finished housing"
+    },
+    {
+      "slot": "M03",
+      "purpose": "One important functional proof",
+      "mode": "Material macro or functional demonstration",
+      "copy_limit": "One benefit plus necessary evidence",
+      "rule": "Different real source angle; no invented internals or functions"
+    },
+    {
+      "slot": "M04",
+      "purpose": "Choose correct SKU",
+      "mode": "Clear configuration and dimensions",
+      "copy_limit": "Controlled specification labels",
+      "rule": "Model-specific, readable and visually related to material palette"
+    },
+    {
+      "slot": "M05",
+      "purpose": "Trust in consistent delivery",
+      "mode": "Genuine relevant factory/QC or original documents",
+      "copy_limit": "One evidenced capability",
+      "rule": "Do not turn fiber inventories into measurement inventory; preserve actual facility"
+    },
+    {
+      "slot": "M06",
+      "purpose": "Start OEM/sample cooperation",
+      "mode": "Genuine customization workflow or product context",
+      "copy_limit": "One offer and practical next step",
+      "rule": "Same-day light-customization sample subject to actual project; usual customization about 7 days; ODM project-specific"
+    }
+  ],
+  "shared_rules": [
+    "Neutral graphite/silver with restrained blue; natural scene neutrals",
+    "Vary crop, angle, distance and density by purpose",
+    "No uniform front view repeated across set",
+    "No mandatory dark background for every SKU",
+    "No inherited PASS from rejected old candidates",
+    "Main images contain no audit notes or uncertain negative FAQ"
+  ],
+  "superseded_by": "governance/PRODUCT_DELIVERABLES_168.json",
+  "_mirrored_from": "Drive Codex data/MATERIAL_SCENE_SLOT_PLAN.json",
+  "_drive_file_id": "1aTWA59GBfNRXQTHJB92e3rE9Z-enrl6F"
+}

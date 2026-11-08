@@ -136,10 +136,22 @@ def process_cutout(
     white_path = output_dir / f"{name_prefix}_white.png"
     white_img.save(white_path)
 
+    sidecar = None
+    try:
+        from .loop.quality import cutout_sidecar
+        sidecar = cutout_sidecar(alpha_path, model="rembg")
+        (output_dir / f"{name_prefix}_sidecar.json").write_text(
+            __import__("json").dumps(sidecar, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+    except Exception:
+        sidecar = None
+
     return {
         "alpha": alpha_path,
         "white": white_path,
         "size": alpha_img.size,
+        "sidecar": sidecar,
     }
 
 

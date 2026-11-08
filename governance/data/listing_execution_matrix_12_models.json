@@ -1,0 +1,315 @@
+{
+  "source_keyword_matrix": "keyword_intent_matrix.json",
+  "status": "Internal execution draft; additional links require live duplicate-rule and existing-link review",
+  "rows": [
+    {
+      "model": "J14",
+      "sample_sku": "J14-Y120AS",
+      "primary_intent": "Tool distributors / connected measurement",
+      "secondary_intent": "Interior installation workflow",
+      "primary_keyword": "laser distance meter",
+      "supporting_keywords": [
+        "laser measure",
+        "digital laser measure"
+      ],
+      "canonical_product_title": "GUANGYAN J14-Y120AS 120m Rechargeable Laser Distance Meter with Wi-Fi App, Voice Readout and Angle Sensing",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "Voice readout and angle sensing are standard across J14 variants per confirmed J14 facts; Wi-Fi App applies only to the applicable smart/AS versions. J14-Y120AS is the selected rechargeable smart SKU.",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "boundary_sources": [
+        "E:/KT_AI/PHOTOS/OUTPUT/J14_ABC_Expansion_20261024/FACTS_J14_FROZEN.md",
+        "data/sku_source_rows.json: source_sheet03/source_row4 and15"
+      ],
+      "historical_titles": [
+        {
+          "title": "GUANGYAN J14-Y120AS 120m Laser Distance Meter with Voice Angle and Wi-Fi App Rechargeable",
+          "role": "superseded_derived_title_20261029"
+        }
+      ],
+      "title_source": "public_candidates\\products\\J14\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "J13S",
+      "sample_sku": "J13S-Y120A",
+      "primary_intent": "Portable tool product line",
+      "secondary_intent": "Rechargeable interior measuring",
+      "primary_keyword": "laser distance meter",
+      "supporting_keywords": [
+        "laser measure"
+      ],
+      "canonical_product_title": "GUANGYAN J13S-Y120A 120m Rechargeable Laser Distance Meter with Angle Sensing",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "120m rechargeable portability; no voice or wireless",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "historical_titles": [
+        {
+          "title": "GUANGYAN J13S-Y120A 120m Laser Distance Meter with Angle Rechargeable",
+          "role": "superseded_derived_title_20261029"
+        }
+      ],
+      "title_source": "public_candidates\\products\\J13S\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "J13",
+      "sample_sku": "J13-Y40A",
+      "primary_intent": "Entry-level rechargeable meter line",
+      "secondary_intent": "Room and installation measurement",
+      "primary_keyword": "laser distance meter",
+      "supporting_keywords": [
+        "laser measure"
+      ],
+      "canonical_product_title": "J13-Y40A 40 m Rechargeable Laser Distance Meter with Angle Sensing",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "40m standard only",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "historical_titles": [
+        {
+          "title": "GUANGYAN J13-Y40A 40m Laser Distance Meter with Angle Rechargeable",
+          "role": "superseded_derived_title_20261029"
+        }
+      ],
+      "title_source": "public_candidates\\products\\J13\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "J12",
+      "sample_sku": "J12",
+      "primary_intent": "Slim rechargeable instrument line",
+      "secondary_intent": "Everyday indoor measuring",
+      "primary_keyword": "laser distance meter",
+      "supporting_keywords": [
+        "laser measure"
+      ],
+      "canonical_product_title": "J12 40 m Slim Rechargeable Laser Distance Meter",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "No angle or voice claim",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "historical_titles": [
+        {
+          "title": "GUANGYAN J12 40m Laser Distance Meter Rechargeable",
+          "role": "superseded_derived_title_20261029"
+        }
+      ],
+      "title_source": "public_candidates\\products\\J12\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "J1S",
+      "sample_sku": "J1S-40A 灰色",
+      "primary_intent": "Compact meter assortment",
+      "secondary_intent": "40m angle-enabled selection",
+      "primary_keyword": "laser distance meter",
+      "supporting_keywords": [
+        "laser measure"
+      ],
+      "canonical_product_title": "GUANGYAN J1S-40A 40m Rechargeable Laser Distance Meter with Angle Sensing, Grey",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "Angle restricted to A configurations",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "title_source": "public_candidates\\products\\J1S\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "J1",
+      "sample_sku": "J1-60A 灰色",
+      "primary_intent": "60m meter assortment",
+      "secondary_intent": "60A voice and angle workflow",
+      "primary_keyword": "laser distance meter",
+      "supporting_keywords": [
+        "laser measure"
+      ],
+      "canonical_product_title": "GUANGYAN J1-60A 60m Rechargeable Laser Distance Meter with Voice Readout and Angle Sensing, Grey",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "Voice and angle restricted to 60A",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "title_source": "public_candidates\\products\\J1\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "C01",
+      "sample_sku": "C01-A20S",
+      "primary_intent": "Outdoor optical rangefinder line",
+      "secondary_intent": "External-display configuration selection",
+      "primary_keyword": "golf rangefinder",
+      "supporting_keywords": [
+        "laser rangefinder"
+      ],
+      "canonical_product_title": "GUANGYAN C01-A20S 2000 m Golf Laser Rangefinder with External Display",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "External display bound to S configurations",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "historical_titles": [
+        {
+          "title": "GUANGYAN C01-A20S 2000m Golf Laser Rangefinder with Flag Lock and Slope External Display",
+          "role": "superseded_derived_title_20261029"
+        }
+      ],
+      "title_source": "parallel\\C01-C02-20261026\\content\\C01\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "C02",
+      "sample_sku": "C02-A20",
+      "primary_intent": "Golf rangefinder assortment",
+      "secondary_intent": "Flag-lock vibration workflow",
+      "primary_keyword": "golf rangefinder",
+      "supporting_keywords": [
+        "laser rangefinder"
+      ],
+      "canonical_product_title": "GUANGYAN C02-A20 2000 m Golf Laser Rangefinder with Vibration Feedback",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "Use verified C02 features only",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "historical_titles": [
+        {
+          "title": "GUANGYAN C02-A20 2000m Golf Laser Rangefinder with Flag Lock and Slope",
+          "role": "superseded_derived_title_20261029"
+        }
+      ],
+      "title_source": "parallel\\C01-C02-20261026\\content\\C02\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "C03",
+      "sample_sku": "C03-20",
+      "primary_intent": "Camera rangefinder product line",
+      "secondary_intent": "Capture and document distance readings",
+      "primary_keyword": "camera rangefinder",
+      "supporting_keywords": [
+        "camera range finder",
+        "imaging monocular"
+      ],
+      "canonical_product_title": "GUANGYAN C03-20 2000m Camera Laser Rangefinder with Wi-Fi Photo Video Recording",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "7x optical / 6x digital, never 42x",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "title_source": "public_candidates\\products\\C03\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "M01",
+      "sample_sku": "M01-角度带线",
+      "primary_intent": "Short-range equipment integration",
+      "secondary_intent": "40m angle-enabled wired configuration",
+      "primary_keyword": "laser distance sensor",
+      "supporting_keywords": [
+        "laser ranging module"
+      ],
+      "canonical_product_title": "M01 40 m UART TTL Laser Ranging Module with Angle Sensing and Wire",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "Confirm delivery/interface configuration before linking variants",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "historical_titles": [
+        {
+          "title": "GUANGYAN M01 40m Laser Ranging Module Wired with Angle Sensing for Equipment Integration",
+          "role": "superseded_derived_title_20261029"
+        }
+      ],
+      "title_source": "public_candidates\\products\\M01\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "M03",
+      "sample_sku": "M03-12",
+      "primary_intent": "Embedded UART module integration",
+      "secondary_intent": "120m equipment ranging",
+      "primary_keyword": "laser distance sensor",
+      "supporting_keywords": [
+        "laser ranging module"
+      ],
+      "canonical_product_title": "GUANGYAN M03-12 120m UART TTL Laser Ranging Module for Equipment Integration",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "Bare board, UART TTL, 3.6–4.2V",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "title_source": "public_candidates\\products\\M03\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    },
+    {
+      "model": "JC02-1",
+      "sample_sku": "JC02-1-12A",
+      "primary_intent": "Long-range optical integration",
+      "secondary_intent": "1200m standard module selection",
+      "primary_keyword": "laser rangefinder module",
+      "supporting_keywords": [
+        "laser ranging module"
+      ],
+      "canonical_product_title": "JC02-1-12A 1200 m UART TTL Laser Ranging Module",
+      "differentiation_required": [
+        "Distinct buyer task and opening image",
+        "Distinct first benefit and inquiry inputs",
+        "Identical SKU facts, dimensions, services and price version across entries"
+      ],
+      "configuration_boundary": "Bare board; 2000m is project customization",
+      "price_reference": "Controlled workbook source tiers; no online price change authorized",
+      "launch_state": "planning_only_not_published",
+      "historical_titles": [
+        {
+          "title": "GUANGYAN JC02-1-12A 1200m Laser Ranging Module for Equipment Integration",
+          "role": "superseded_derived_title_20261029"
+        }
+      ],
+      "title_source": "public_candidates\\products\\JC02-1\\buyer_content.json",
+      "title_review": "current_native_draft_aligned; keyword_intent_and_live_listing_review_pending"
+    }
+  ],
+  "boundary_correction_date": "2026-10-29",
+  "_mirrored_from": "Drive Codex data/listing_execution_matrix_12_models.json",
+  "_drive_file_id": "1ELyp4JJwE9hwPGNURK1c9zJtfL6RO-oN"
+}

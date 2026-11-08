@@ -1,0 +1,27 @@
+{
+  "source": "用户本轮直接确认",
+  "date": "2026-10-22",
+  "standard_product_delivery": "3 days",
+  "warranty": {
+    "current_measurement_store_products": "1 year",
+    "other_store_only_fiber_fusion_splicers": "3 years; do not show on current store"
+  },
+  "remote_technical_support": true,
+  "light_customization_fastest": "same-day sampling; photos/videos available",
+  "usual_other_sampling_customization": "about 7 days",
+  "odm": "project-specific",
+  "laser_logo_customization": {
+    "in_house_laser_marking_machine": true,
+    "metal_housing_logo_engraving": true,
+    "logo_sample_images_and_sampling": "1–2 days for light logo customization"
+  },
+  "documentation_families": ["ISO 9001", "FCC", "CE", "RoHS", "EMC", "LVD", "BIS", "MSDS", "UN38.3", "battery transport reports"],
+  "compliance_wording": "按产品及目标市场配套文件与支持；不把文件家族无差别标到每个SKU",
+  "public_copy_rule": "展示优势、产品适用价值与下一步；审计缺口和冲突只在内部台账",
+  "modules_form_user_confirmation": "模组都是裸板，外壳/材料和配置按SKU文字说明；不凭旧名称假造完整外壳",
+  "store_scope": {
+    "current": "Shenzhen Guangyan Measurement Equipment Co., Ltd. measurement new store",
+    "included": ["laser ranging modules", "handheld laser distance meters", "rangefinder telescopes"],
+    "excluded_kaiteng_fiber_store": ["fiber fusion splicers", "optical power meters", "OTDR", "fiber identifiers", "PON power meters", "fiber tools and accessories"]
+  }
+}

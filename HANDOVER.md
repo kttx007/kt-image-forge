@@ -1,6 +1,6 @@
 # kt-image-forge 现状交接
 
-> v0.1.0 已发 GitHub。接手人请从头读这个文件。
+> v0.2.1：已合并用户指定的两大 Drive 工程——品牌视觉系统 + 最新 Codex 激光作图；测试可跑通。接手人仍请读这个文件与 `docs/DRIVE_SOURCES.md`。
 
 ## 已完成
 
@@ -79,6 +79,33 @@
 "硬刚硬融"                  — 别硬贴硬抠
 "局部修改就行"               — 生图后局部精修，而不是重做
 ```
+
+
+
+## v0.2.1 大工程合并（2026-11-08）
+
+- [x] 并入 Drive **品牌视觉系统** + **最新 Codex 激光作图工程**
+- [x] `governance/`：PRODUCTION_REGISTRY / 统一执行约定 / 品牌方向 / 业务事实 / PROGRAM_SUMMARY
+- [x] `brand/`：DesignOS 令牌与跨模型协定（冻结色 `#2260AB` 等）
+- [x] `forge/program.py` + `forge/brand.py`：12×14 槽位骨架接入 LOOP
+- [x] `docs/DRIVE_SOURCES.md` 权威源地图
+- [ ] Drive 大体量 `PROGRAM_SETS` / 168 图 / 交付 ZIP 仍留云盘（不整包塞 Git）
+
+## v0.2.0 已补（2026-11-08）
+
+- [x] 找回 Drive `visual-factory-loop`、`guangyan-visual-loop`、`00_C03视觉生产档案_LOOP_20260915`、`GENERATED_MASTER_PRODUCTION_LOOP.md`
+- [x] Python 移植 LOOP 状态机到 `forge/loop/`（与 vendor JS 行为对齐）
+- [x] 并入 ai-eyes 看图桥接 `vendor/ai-eyes`
+- [x] 吸收 photoclean alpha-edge / rembg sidecar 质量评分
+- [x] 重写 `forge/audit.py`：不再把 IP65/磁吸等已确认能力当禁词；SSIM 不再硬拒合成图
+- [x] `pytest tests/` + `node --test`（vendor）可跑通
+
+仍未完成（需密钥/人工/Drive 素材）：
+
+- [ ] MiniMax-M3 实机看 C03 十张实拍（需 `MINIMAX_API_KEY`）
+- [ ] 无限画布图层合成 UI
+- [ ] 按 A–F Hero LOOP 真正出可投放图并上线记数据
+- [ ] 多产品实例（仅 C03）
 
 ## 下一步优先级
 
