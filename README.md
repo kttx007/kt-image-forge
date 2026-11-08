@@ -126,6 +126,19 @@ MIT
 
 
 
+## 大工程合并（Drive 正本）
+
+Codex 完整工程在 Google Drive；本仓吸收可执行合同与运行时：
+
+| 层 | 本仓 | Drive 正本 |
+|----|------|-----------|
+| 品牌 DesignOS | `brand/` | [品牌视觉系统](https://drive.google.com/drive/folders/1D9pw5pspSKHtINSahkGOnCO8PTXtrjEY) |
+| Codex 激光作图 | `governance/` | [最新 Codex 作图工程](https://drive.google.com/drive/folders/1anOjVul_RUxNkBRgS55Fgvimg0fx8AcR) |
+| Visual Loop | `forge/loop/` | visual-factory-loop / guangyan-visual-loop |
+| 源地图 | `docs/DRIVE_SOURCES.md` | — |
+
+12×14 槽位骨架：`forge.program.build_default_job_skeleton("C03")` → `forge.loop.create_run(...)`。
+
 ## Visual Factory Loop（v0.2）
 
 已合并 Codex 自研 `visual-factory-loop` / `guangyan-visual-loop` 经验：

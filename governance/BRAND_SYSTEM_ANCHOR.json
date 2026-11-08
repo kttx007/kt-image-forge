@@ -1,0 +1,42 @@
+{
+  "set_id": "GUANGYAN-B2B-MATERIAL-SCENE-20261022",
+  "audience": [
+    "distributors",
+    "OEM brands",
+    "equipment manufacturers"
+  ],
+  "scope": [
+    "laser ranging modules",
+    "handheld laser distance meters",
+    "rangefinder telescopes"
+  ],
+  "brand_base": "graphite / charcoal / silver material-led lighting; restrained blue accents; natural neutral application scenes",
+  "supporting_colors": [
+    "silver and charcoal from real hardware",
+    "small product-orange accents",
+    "natural scene colors subordinated to brand base"
+  ],
+  "frozen_tokens": {
+    "brand_blue": "#2260AB",
+    "accent_orange": "#FF840C",
+    "neutral_silver": "#B7B7B7",
+    "graphite": "#56555D"
+  },
+  "modes": [
+    "precision product selection",
+    "real application story",
+    "macro functional proof",
+    "configuration and dimensional clarity",
+    "authentic factory and QC",
+    "OEM samples and packaging",
+    "exhibition and authentic customer proof"
+  ],
+  "angle_rule": "use approved source angles by slot; no single front angle across entire set",
+  "image_method": "complete integrated image generation; no collage as default",
+  "primary_mode": "material-led instrument imagery matching real product color",
+  "secondary_mode": "natural application scenes (renovation / surveying / measurement tasks)",
+  "rejected_direction": "warm-white oversized blue-number template",
+  "typography_rule": "product first; one core purchase reason; at most one supporting line; model as secondary info",
+  "rhythm_rule": "hero → application → functional macro → specs → trust → OEM; vary angle/density",
+  "positioning_line": "精密仪器的展台，不是电商货架"
+}

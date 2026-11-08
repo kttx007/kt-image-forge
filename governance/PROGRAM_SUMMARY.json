@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.2",
+  "p1_models_target": 12,
+  "slots_per_model": 14,
+  "mains_per_model": 6,
+  "details_per_model": 8,
+  "p1_image_slots": 168,
+  "p2_remaining_skus": 71,
+  "cumulative_skus": 83,
+  "store_pages": ["HOME", "OEMODM"],
+  "accepted_complete_sets": 0,
+  "note": "Full PROGRAM_SETS.json / PRODUCT_DELIVERABLES_168.json remain on Drive Codex store (large). This summary is the local machine-readable contract for forge.program.",
+  "drive_program_sets": "governance/PROGRAM_SETS.json on Drive folder 1anOjVul_RUxNkBRgS55Fgvimg0fx8AcR",
+  "local_product_instances": ["c03"],
+  "slot_kinds_default": {
+    "M01": "main_image",
+    "M02": "main_image",
+    "M03": "main_image",
+    "M04": "main_image",
+    "M05": "main_image",
+    "M06": "main_image",
+    "D01": "normal_detail",
+    "D02": "normal_detail",
+    "D03": "normal_detail",
+    "D04": "normal_detail",
+    "D05": "normal_detail",
+    "D06": "dense_fact_detail",
+    "D07": "normal_detail",
+    "D08": "normal_detail"
+  }
+}

@@ -2,6 +2,15 @@
 
 本轮不是“再列一堆名字”，而是把已验证机制并进 `forge/loop` / `forge/audit` / `forge/loop/quality`。
 
+## 用户指定的两大 Drive 主目录（v0.2.1）
+
+| Drive | 吸收到 |
+|-------|--------|
+| [品牌视觉系统 DesignOS](https://drive.google.com/drive/folders/1D9pw5pspSKHtINSahkGOnCO8PTXtrjEY) | `brand/` + 冻结 tokens |
+| [最新 Codex 激光作图工程](https://drive.google.com/drive/folders/1anOjVul_RUxNkBRgS55Fgvimg0fx8AcR) | `governance/` + `forge/program.py` |
+
+分层：Brand Book ≠ Design System ≠ Visual Factory Loop ≠ GEO SOP（见 `docs/DRIVE_SOURCES.md`）。
+
 ## 已并入本仓库的自有 Codex 工程
 
 | 来源 | 吸收点 | 落地 |

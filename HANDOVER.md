@@ -1,6 +1,6 @@
 # kt-image-forge 现状交接
 
-> v0.2.0：已找回并合并 Drive 上的 Codex `visual-factory-loop` / `guangyan-visual-loop` 经验，测试可跑通。接手人仍请读这个文件。
+> v0.2.1：已合并用户指定的两大 Drive 工程——品牌视觉系统 + 最新 Codex 激光作图；测试可跑通。接手人仍请读这个文件与 `docs/DRIVE_SOURCES.md`。
 
 ## 已完成
 
@@ -81,6 +81,15 @@
 ```
 
 
+
+## v0.2.1 大工程合并（2026-11-08）
+
+- [x] 并入 Drive **品牌视觉系统** + **最新 Codex 激光作图工程**
+- [x] `governance/`：PRODUCTION_REGISTRY / 统一执行约定 / 品牌方向 / 业务事实 / PROGRAM_SUMMARY
+- [x] `brand/`：DesignOS 令牌与跨模型协定（冻结色 `#2260AB` 等）
+- [x] `forge/program.py` + `forge/brand.py`：12×14 槽位骨架接入 LOOP
+- [x] `docs/DRIVE_SOURCES.md` 权威源地图
+- [ ] Drive 大体量 `PROGRAM_SETS` / 168 图 / 交付 ZIP 仍留云盘（不整包塞 Git）
 
 ## v0.2.0 已补（2026-11-08）
 
