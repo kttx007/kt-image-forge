@@ -1,0 +1,46 @@
+{
+  "job_id": "JC02-bright-v2",
+  "product": {"sku": "JC02"},
+  "product_assets": [
+    {"id": "angle_A", "path": "inputs/JC02_angle_A.png", "role": "identity_reference"},
+    {"id": "angle_B", "path": "inputs/JC02_angle_B.png", "role": "identity_reference"}
+  ],
+  "style": {
+    "name": "bright_precision_lab",
+    "keywords": ["high-key commercial engineering", "clean white", "ice blue accents", "daylight edge light"],
+    "avoid": ["cheap sci-fi", "visual clutter"]
+  },
+  "product_identity": [
+    {"rule": "Preserve visible housing geometry, holes, ports, PCB layout and wire connector relationship.", "scopes": ["*"]}
+  ],
+  "physical_rules": [
+    {"rule": "Dimension semantics: 27.5 mm long axis, 25 mm height, 12.8 mm thickness.", "scopes": ["M02", "D05"]}
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "claim": "Long-range module positioning",
+      "evidence": ["Use only values approved in the product fact ledger."],
+      "buyer_relevance": "Helps integrators qualify the module before engineering integration.",
+      "qualifier": "Configuration dependent where applicable."
+    }
+  ],
+  "slots": [
+    {
+      "id": "M01",
+      "kind": "main_image",
+      "role": "hook",
+      "buyer_question": "What is this and why should I care?",
+      "dominant_message": "Present JC02 as a compact professional ranging module for integration.",
+      "claim_ids": ["C01"]
+    },
+    {
+      "id": "M02",
+      "kind": "dimension_diagram",
+      "role": "fit",
+      "buyer_question": "Will it fit my product?",
+      "dominant_message": "Explain physical integration dimensions accurately.",
+      "claim_ids": []
+    }
+  ]
+}

@@ -62,3 +62,15 @@ python cli/kt-image-forge facts c03
 - **事实冻结**: 图中参数必须与 facts.yaml 一致
 - **禁宣称**: forbidden_claims.md 中的词绝不出现
 - **确定性合成**: Pillow/OpenCV 代码保证可复现，AI 不参与产品合成
+
+
+## Visual Loop (v0.2)
+
+Before generating commerce images, read:
+- `docs/visual-loop/OPERATING_CONTRACT.md`
+- `docs/visual-loop/GENERATED_MASTER_PRODUCTION_LOOP.md`
+- product `facts.yaml` / forbidden claims / LOOP plan
+
+Use `python -m forge.loop.cli plan|bundle` for recoverable slot state.
+Audit with hard gates via `forge.loop.audit_candidate` / `forge.audit`.
+See with `forge.loop.eyes` → MiniMax-M3 (`vendor/ai-eyes`).

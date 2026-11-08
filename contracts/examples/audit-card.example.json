@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.1",
+  "slot_id": "M01",
+  "candidate_path": null,
+  "candidate_sha256": null,
+  "checks": {
+    "fact_truth": "pending",
+    "product_identity": "pending",
+    "physical_truth": "pending",
+    "channel_readability": "pending",
+    "dimensions_and_format": "pending"
+  },
+  "decision": "pending",
+  "failed_regions": [],
+  "repair_attempt_for_same_defect": 0,
+  "next_action": "audit"
+}

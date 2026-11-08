@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.1",
+  "sku": "replace-me",
+  "product_truth_assets": [],
+  "invariants": [
+    {
+      "id": "visible-structure-1",
+      "description": "Describe one buyer-visible invariant",
+      "source_asset_id": null,
+      "severity": "critical",
+      "normal_inspection_tolerance": "No obvious geometry drift"
+    }
+  ],
+  "prohibited": ["invent unseen geometry", "redraw logo", "change model identity"]
+}
