@@ -1,0 +1,52 @@
+{
+  "status": "DRAFT / derived from V2.3 frozen facts",
+  "brand": {
+    "name": "GUANGYAN",
+    "primary": "#2260AB",
+    "accent": "#FF840C",
+    "silver": "#B7B7B7",
+    "panel": "#56555D",
+    "fontLatin": "Inter",
+    "fontCJK": "Noto Sans CJK SC / 思源黑体"
+  },
+  "semantic": {
+    "surface": "#FFFFFF",
+    "surfaceMuted": "#F8F9FA",
+    "text": "#1A2332",
+    "textSecondary": "#667085",
+    "line": "#E4E7EC",
+    "statusRed": "#D92D20",
+    "statusPending": "#E67700",
+    "statusSuccess": "#12805C",
+    "statusMuted": "#98A2B3"
+  },
+  "space": {
+    "1": 4,
+    "2": 8,
+    "3": 16,
+    "4": 24,
+    "5": 32,
+    "6": 48,
+    "7": 64
+  },
+  "guidance": {
+    "containerMax": 1200,
+    "desktopColumns": 12,
+    "tabletColumns": 8,
+    "mobileColumns": 4,
+    "buttonHeightRecommended": 44,
+    "cardRadiusRecommended": 8
+  },
+  "contrastVerified": {
+    "brandBlueWhite": 6.31,
+    "orangeDarkText": 6.43,
+    "orangeWhiteText": 2.45,
+    "mutedGrayWhite": 2.58
+  },
+  "notes": [
+    "颜色、字体是冻结事实；新组件数值仅为待样板验收建议",
+    "图片只由用户图片和已检索云盘实物素材裁切，不曾 AI 重绘产品"
+  ],
+  "_mirrored_from": "Drive DesignOS 02_V2.4工作稿/brand-tokens.v2.4-draft.json",
+  "_drive_file_id": "1s4mn7FAQBLbi0Hh_iON6usGQi3NypAp3"
+}

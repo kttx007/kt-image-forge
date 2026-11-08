@@ -1,0 +1,128 @@
+{
+  "source": "Drive Codex store data/listing_execution_matrix_12_models.json + model_sample_matrix.json",
+  "drive_folder": "https://drive.google.com/drive/folders/1anOjVul_RUxNkBRgS55Fgvimg0fx8AcR",
+  "status": "Internal execution draft; not published",
+  "p1_models": 12,
+  "rows": [
+    {
+      "model": "J14",
+      "sample_sku": "J14-Y120AS",
+      "family": "handheld",
+      "primary_keyword": "laser distance meter",
+      "configuration_boundary": "Voice readout and angle sensing are standard across J14 variants per confirmed J14 facts; Wi-Fi App applies only to the applicable smart/AS versions. J14-Y120AS is the selected rechargeable smart SKU.",
+      "positioning_zh": "施工测算与Wi-Fi协作旗舰",
+      "canonical_product_title": "GUANGYAN J14-Y120AS 120m Rechargeable Laser Distance Meter with Wi-Fi App, Voice Readout and Angle Sensing",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "J13S",
+      "sample_sku": "J13S-Y120A",
+      "family": "handheld",
+      "primary_keyword": "laser distance meter",
+      "configuration_boundary": "120m rechargeable portability; no voice or wireless",
+      "positioning_zh": "120m轻量口袋工程主力",
+      "canonical_product_title": "GUANGYAN J13S-Y120A 120m Rechargeable Laser Distance Meter with Angle Sensing",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "J13",
+      "sample_sku": "J13-Y40A",
+      "family": "handheld",
+      "primary_keyword": "laser distance meter",
+      "configuration_boundary": "40m standard only",
+      "positioning_zh": "40m入门量房与充电选型",
+      "canonical_product_title": "J13-Y40A 40 m Rechargeable Laser Distance Meter with Angle Sensing",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "J12",
+      "sample_sku": "J12",
+      "family": "handheld",
+      "primary_keyword": "laser distance meter",
+      "configuration_boundary": "No angle or voice claim",
+      "positioning_zh": "超薄随身充电款",
+      "canonical_product_title": "J12 40 m Slim Rechargeable Laser Distance Meter",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "J1S",
+      "sample_sku": "J1S-40A 灰色",
+      "family": "handheld",
+      "primary_keyword": "laser distance meter",
+      "configuration_boundary": "Angle restricted to A configurations",
+      "positioning_zh": "40m金属外观口袋工具",
+      "canonical_product_title": "GUANGYAN J1S-40A 40m Rechargeable Laser Distance Meter with Angle Sensing, Grey",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "J1",
+      "sample_sku": "J1-60A 灰色",
+      "family": "handheld",
+      "primary_keyword": "laser distance meter",
+      "configuration_boundary": "Voice and angle restricted to 60A",
+      "positioning_zh": "60m语音角度工具",
+      "canonical_product_title": "GUANGYAN J1-60A 60m Rechargeable Laser Distance Meter with Voice Readout and Angle Sensing, Grey",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "C01",
+      "sample_sku": "C01-A20S",
+      "family": "optical_rangefinder",
+      "primary_keyword": "golf rangefinder",
+      "configuration_boundary": "External display bound to S configurations",
+      "positioning_zh": "屏显光学测距选型",
+      "canonical_product_title": "GUANGYAN C01-A20S 2000 m Golf Laser Rangefinder with External Display",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "C02",
+      "sample_sku": "C02-A20",
+      "family": "optical_rangefinder",
+      "primary_keyword": "golf rangefinder",
+      "configuration_boundary": "Use verified C02 features only",
+      "positioning_zh": "带震动提示的光学测距选型",
+      "canonical_product_title": "GUANGYAN C02-A20 2000 m Golf Laser Rangefinder with Vibration Feedback",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "C03",
+      "sample_sku": "C03-20",
+      "family": "camera_rangefinder",
+      "primary_keyword": "camera rangefinder",
+      "configuration_boundary": "7x optical / 6x digital, never 42x",
+      "positioning_zh": "拍照录像与测量记录旗舰",
+      "canonical_product_title": "GUANGYAN C03-20 2000m Camera Laser Rangefinder with Wi-Fi Photo Video Recording",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "M01",
+      "sample_sku": "M01-角度带线",
+      "family": "module",
+      "primary_keyword": "laser distance sensor",
+      "configuration_boundary": "Confirm delivery/interface configuration before linking variants",
+      "positioning_zh": "40m微型UART集成平台",
+      "canonical_product_title": "M01 40 m UART TTL Laser Ranging Module with Angle Sensing and Wire",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "M03",
+      "sample_sku": "M03-12",
+      "family": "module",
+      "primary_keyword": "laser distance sensor",
+      "configuration_boundary": "Bare board, UART TTL, 3.6–4.2V",
+      "positioning_zh": "60–120m嵌入式测距平台",
+      "canonical_product_title": "GUANGYAN M03-12 120m UART TTL Laser Ranging Module for Equipment Integration",
+      "launch_state": "planning_only_not_published"
+    },
+    {
+      "model": "JC02-1",
+      "sample_sku": "JC02-1-12A",
+      "family": "module",
+      "primary_keyword": "laser rangefinder module",
+      "configuration_boundary": "Bare board; 2000m is project customization",
+      "positioning_zh": "600–1200m远距光学设备集成平台",
+      "canonical_product_title": "JC02-1-12A 1200 m UART TTL Laser Ranging Module",
+      "launch_state": "planning_only_not_published"
+    }
+  ]
+}

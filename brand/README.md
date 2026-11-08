@@ -6,12 +6,13 @@
 
 ## 本仓职责
 
-- 冻结色与字体令牌：`tokens.json`
+- 冻结色与字体令牌：`tokens.json`（含 LOOP 用 `colors` 别名）
+- DesignOS V2.4 草稿镜像：`tokens.v2.4-draft.json`（**DRAFT，非锁版**）
 - 跨模型分工与状态机：`CROSS_MODEL_AGREEMENT.md`
 - Codex/Hermes 施工边界：`CODEX_HERMES_BRIEF.md`
 - 入口摘要：`START_HERE.md`
 
-完整 Brand Book PDF/HTML、素材台账、V2.4 工作稿仍在 Drive（多数为 **DRAFT**，非用户锁版）。
+完整 Brand Book PDF/HTML、素材台账、V2.4 HTML/PDF 仍在 Drive。
 
 ## 与 Visual Factory 的边界
 

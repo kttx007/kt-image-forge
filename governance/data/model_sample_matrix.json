@@ -1,0 +1,242 @@
+[
+  {
+    "model": "J14",
+    "sku_count": 12,
+    "positioning_draft_zh": "施工测算与Wi-Fi协作旗舰",
+    "sample_sku_proposal": "J14-Y120AS",
+    "matched_source_rows": [
+      15
+    ],
+    "sample_source_values": [
+      {
+        "sku": "J14-Y120AS",
+        "range": "0.05–120 m",
+        "power": "1100 mAh 锂电（Type-C）",
+        "source_usd": 35,
+        "source_tiers": "1–49：$35｜50–199：$33.3｜≥200：$31.5"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "J13S",
+    "sku_count": 16,
+    "positioning_draft_zh": "120m轻量口袋工程主力",
+    "sample_sku_proposal": "J13S-Y120A",
+    "matched_source_rows": [
+      31
+    ],
+    "sample_source_values": [
+      {
+        "sku": "J13S-Y120A",
+        "range": "0.05–120 m",
+        "power": "700 mAh 锂电（Type-C）",
+        "source_usd": 16,
+        "source_tiers": "1–49：$16｜50–199：$15.2｜≥200：$14.4"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "J13",
+    "sku_count": 4,
+    "positioning_draft_zh": "40m入门量房与充电选型",
+    "sample_sku_proposal": "J13-Y40A",
+    "matched_source_rows": [
+      35
+    ],
+    "sample_source_values": [
+      {
+        "sku": "J13-Y40A",
+        "range": "0.05–40 m",
+        "power": "300 mAh 锂电（Type-C）",
+        "source_usd": 10,
+        "source_tiers": "1–49：$10｜50–199：$9.5｜≥200：$9.0"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "J12",
+    "sku_count": 1,
+    "positioning_draft_zh": "超薄随身充电款",
+    "sample_sku_proposal": "J12",
+    "matched_source_rows": [
+      36
+    ],
+    "sample_source_values": [
+      {
+        "sku": "J12",
+        "range": "0.05–40 m",
+        "power": "150 mAh 锂电（Type-C）",
+        "source_usd": 10,
+        "source_tiers": "1–49：$10｜50–199：$9.5｜≥200：$9.0"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "J1S",
+    "sku_count": 4,
+    "positioning_draft_zh": "40m金属外观口袋工具",
+    "sample_sku_proposal": "J1S-40A 灰色",
+    "matched_source_rows": [
+      39
+    ],
+    "sample_source_values": [
+      {
+        "sku": "J1S-40A 灰色",
+        "range": "0.05–40 m",
+        "power": "150 mAh 锂电（Type-C）",
+        "source_usd": 15,
+        "source_tiers": "1–49：$15｜50–199：$14.3｜≥200：$13.5"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "J1",
+    "sku_count": 4,
+    "positioning_draft_zh": "60m语音角度工具",
+    "sample_sku_proposal": "J1-60A 灰色",
+    "matched_source_rows": [
+      43
+    ],
+    "sample_source_values": [
+      {
+        "sku": "J1-60A 灰色",
+        "range": "0.05–60 m",
+        "power": "300 mAh 锂电（Micro USB）",
+        "source_usd": 21,
+        "source_tiers": "1–49：$21｜50–199：$20.0｜≥200：$18.9"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "C01",
+    "sku_count": 16,
+    "positioning_draft_zh": "屏显光学测距选型",
+    "sample_sku_proposal": "C01-A20S",
+    "matched_source_rows": [
+      60
+    ],
+    "sample_source_values": [
+      {
+        "sku": "C01-A20S",
+        "range": "3–2000 m",
+        "power": "800 mAh 锂电（Type-C）",
+        "source_usd": 147,
+        "source_tiers": "1–9：$147｜10–49：$139.7｜≥50：$132.3"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "C02",
+    "sku_count": 8,
+    "positioning_draft_zh": "带震动提示的光学测距选型",
+    "sample_sku_proposal": "C02-A20",
+    "matched_source_rows": [
+      68
+    ],
+    "sample_source_values": [
+      {
+        "sku": "C02-A20",
+        "range": "3–2000 m",
+        "power": "800 mAh 锂电（Type-C）",
+        "source_usd": 123.8,
+        "source_tiers": "1–9：$123.8｜10–49：$117.8｜≥50：$112.5"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "C03",
+    "sku_count": 2,
+    "positioning_draft_zh": "拍照录像与测量记录旗舰",
+    "sample_sku_proposal": "C03-20",
+    "matched_source_rows": [
+      70
+    ],
+    "sample_source_values": [
+      {
+        "sku": "C03-20",
+        "range": "0.1–2000 m",
+        "power": "1250 mAh 锂电（Type-C）",
+        "source_usd": 405,
+        "source_tiers": "1–9：$405｜10–49：$385｜≥50：$365"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "M01",
+    "sku_count": 5,
+    "positioning_draft_zh": "40m微型UART集成平台",
+    "sample_sku_proposal": "M01-角度带线",
+    "matched_source_rows": [
+      74
+    ],
+    "sample_source_values": [
+      {
+        "sku": "M01-角度带线",
+        "range": "40 m",
+        "power": "3.3 V",
+        "source_usd": 6,
+        "source_tiers": "10–99：$6｜100–499：$5.7｜≥500：$5.4"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "M03",
+    "sku_count": 4,
+    "positioning_draft_zh": "60–120m嵌入式测距平台",
+    "sample_sku_proposal": "M03-12",
+    "matched_source_rows": [
+      79
+    ],
+    "sample_source_values": [
+      {
+        "sku": "M03-12",
+        "range": "0.045–120 m",
+        "power": "3.6–4.2 V",
+        "source_usd": 8,
+        "source_tiers": "10–99：$8｜100–499：$7.6｜≥500：$7.2"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  },
+  {
+    "model": "JC02-1",
+    "sku_count": 7,
+    "positioning_draft_zh": "600–1200m远距光学设备集成平台",
+    "sample_sku_proposal": "JC02-1-12A",
+    "matched_source_rows": [
+      86
+    ],
+    "sample_source_values": [
+      {
+        "sku": "JC02-1-12A",
+        "range": "1200 m",
+        "power": "3.3–3.8 V",
+        "source_usd": 17,
+        "source_tiers": "10–99：$17｜100–499：$16.2｜≥500：$15.3"
+      }
+    ],
+    "sample_status": "source_row_found_pending_identity_audit",
+    "published": false
+  }
+]

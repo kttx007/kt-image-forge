@@ -137,7 +137,8 @@ Codex 完整工程在 Google Drive；本仓吸收可执行合同与运行时：
 | Visual Loop | `forge/loop/` | visual-factory-loop / guangyan-visual-loop |
 | 源地图 | `docs/DRIVE_SOURCES.md` | — |
 
-12×14 槽位骨架：`forge.program.build_default_job_skeleton("C03")` → `forge.loop.create_run(...)`。
+12×14 槽位骨架：`forge.program.build_p1_job_for_model("C03")` → `forge.loop.create_run(...)`。  
+P1 十二型号矩阵：`governance/data/` · Style Intelligence：`docs/visual-factory-os/`。
 
 ## Visual Factory Loop（v0.2）
 

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "0.3",
   "p1_models_target": 12,
   "slots_per_model": 14,
   "mains_per_model": 6,
@@ -7,11 +7,16 @@
   "p1_image_slots": 168,
   "p2_remaining_skus": 71,
   "cumulative_skus": 83,
-  "store_pages": ["HOME", "OEMODM"],
+  "store_pages": [
+    "HOME",
+    "OEMODM"
+  ],
   "accepted_complete_sets": 0,
-  "note": "Full PROGRAM_SETS.json / PRODUCT_DELIVERABLES_168.json remain on Drive Codex store (large). This summary is the local machine-readable contract for forge.program.",
+  "note": "Full PROGRAM_SETS.json / PRODUCT_DELIVERABLES_168.json remain on Drive Codex store (large). Local machine-readable contract: this summary + governance/data/* matrices mirrored from Drive.",
   "drive_program_sets": "governance/PROGRAM_SETS.json on Drive folder 1anOjVul_RUxNkBRgS55Fgvimg0fx8AcR",
-  "local_product_instances": ["c03"],
+  "local_product_instances": [
+    "c03"
+  ],
   "slot_kinds_default": {
     "M01": "main_image",
     "M02": "main_image",
@@ -27,5 +32,40 @@
     "D06": "dense_fact_detail",
     "D07": "normal_detail",
     "D08": "normal_detail"
-  }
+  },
+  "p1_models": [
+    "J14",
+    "J13S",
+    "J13",
+    "J12",
+    "J1S",
+    "J1",
+    "C01",
+    "C02",
+    "C03",
+    "M01",
+    "M03",
+    "JC02-1"
+  ],
+  "p1_sample_skus": {
+    "J14": "J14-Y120AS",
+    "J13S": "J13S-Y120A",
+    "J13": "J13-Y40A",
+    "J12": "J12",
+    "J1S": "J1S-40A 灰色",
+    "J1": "J1-60A 灰色",
+    "C01": "C01-A20S",
+    "C02": "C02-A20",
+    "C03": "C03-20",
+    "M01": "M01-角度带线",
+    "M03": "M03-12",
+    "JC02-1": "JC02-1-12A"
+  },
+  "data_files": {
+    "p1_twelve_models": "governance/data/p1_twelve_models.json",
+    "listing_execution_matrix": "governance/data/listing_execution_matrix_12_models.json",
+    "model_sample_matrix": "governance/data/model_sample_matrix.json",
+    "slot_plan": "governance/data/MATERIAL_SCENE_SLOT_PLAN.json"
+  },
+  "style_intelligence": "docs/visual-factory-os/STYLE_INTELLIGENCE_LAYER_V3_1.md"
 }

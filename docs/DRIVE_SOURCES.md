@@ -34,6 +34,17 @@ Codex / 品牌视觉系统的完整工程在云盘，不在 GitHub 单仓。本�
 5. `UNIFIED_EXECUTION_CONTRACT_20261029.md`
 6. `PROGRAM_SETS.json` / `PRODUCT_DELIVERABLES_168.json`（大体量，留在 Drive）
 
+## 本仓已镜像的可执行数据（非大图）
+
+| 本地路径 | Drive 源 |
+|----------|----------|
+| `governance/data/listing_execution_matrix_12_models.json` | Codex `data/` |
+| `governance/data/model_sample_matrix.json` | Codex `data/` |
+| `governance/data/MATERIAL_SCENE_SLOT_PLAN.json` | Codex `data/` |
+| `governance/data/p1_twelve_models.json` | 上三者派生的 LOOP 视图 |
+| `brand/tokens.json` + `brand/tokens.v2.4-draft.json` | DesignOS V2.4 draft |
+| `docs/visual-factory-os/STYLE_INTELLIGENCE_LAYER_V3_1.md` | V3.1 Style Intelligence |
+
 ## DesignOS 读序
 
 1. `00_交接入口/00_START_HERE_读我先看.md`

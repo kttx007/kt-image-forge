@@ -6,4 +6,4 @@ kt-image-forge: 产品像素不可侵犯的电商视觉生产引擎
 品牌层：DesignOS tokens；交付层：governance 12×14 / 83 SKU 程序。
 """
 
-__version__ = "0.2.1"
+__version__ = "0.2.2"
